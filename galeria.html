@@ -1,0 +1,592 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Galería</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+
+
+<!--GALERIA-->
+
+<script type="text/javascript">
+/*-----------------GALERIA--------------------*/
+$('#myCarousel').carousel({
+    interval: 4000
+});
+
+// handles the carousel thumbnails
+$('[id^=carousel-selector-]').click( function(){
+  var id_selector = $(this).attr("id");
+  var id = id_selector.substr(id_selector.length -1);
+  id = parseInt(id);
+  $('#myCarousel').carousel(id);
+  $('[id^=carousel-selector-]').removeClass('selected');
+  $(this).addClass('selected');
+});
+
+// when the carousel slides, auto update
+$('#myCarousel').on('slid', function (e) {
+  var id = $('.item.active').data('slide-number');
+  id = parseInt(id);
+  $('[id^=carousel-selector-]').removeClass('selected');
+  $('[id=carousel-selector-'+id+']').addClass('selected');
+});
+
+$(function () {
+    'use strict';
+
+    // Load demo images from flickr:
+    // $.ajax({
+    //     url: 'https://api.flickr.com/services/rest/',
+    //     data: {
+    //         format: 'json',
+    //         method: 'flickr.interestingness.getList',
+    //         api_key: '7617adae70159d09ba78cfec73c13be3'
+    //     },
+    //     dataType: 'jsonp',
+    //     jsonp: 'jsoncallback'
+    // }).done(function (result) {
+    //     var linksContainer = $('#links'),
+    //         baseUrl;
+    //     // Add the demo images as links with thumbnails to the page:
+    //     $.each(result.photos.photo, function (index, photo) {
+    //         baseUrl = 'http://farm' + photo.farm + '.static.flickr.com/' +
+    //             photo.server + '/' + photo.id + '_' + photo.secret;
+    //         $('<a/>')
+    //             .append($('<img>').prop('src', baseUrl + '_s.jpg'))
+    //             .prop('href', baseUrl + '_b.jpg')
+    //             .prop('title', photo.title)
+    //             .attr('data-gallery', '')
+    //             .appendTo(linksContainer);
+    //     });
+    // });
+
+    $('#borderless-checkbox').on('change', function () {
+        var borderless = $(this).is(':checked');
+        $('#blueimp-gallery').data('useBootstrapModal', !borderless);
+        $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', borderless);
+    });
+
+    $('#fullscreen-checkbox').on('change', function () {
+        $('#blueimp-gallery').data('fullScreen', $(this).is(':checked'));
+    });
+
+    $('#image-gallery-button').on('click', function (event) {
+        event.preventDefault();
+        blueimp.Gallery($('#links a'), $('#blueimp-gallery').data());
+    });
+
+    $('#video-gallery-button').on('click', function (event) {
+        event.preventDefault();
+        blueimp.Gallery([
+            {
+                title: 'Sintel',
+                href: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
+                type: 'video/mp4',
+                poster: 'http://media.w3.org/2010/05/sintel/poster.png'
+            },
+            {
+                title: 'Big Buck Bunny',
+                href: 'http://upload.wikimedia.org/wikipedia/commons/7/75/' +
+                    'Big_Buck_Bunny_Trailer_400p.ogg',
+                type: 'video/ogg',
+                poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/' +
+                    'Big.Buck.Bunny.-.Opening.Screen.png/' +
+                    '800px-Big.Buck.Bunny.-.Opening.Screen.png'
+            },
+            {
+                title: 'Elephants Dream',
+                href: 'http://upload.wikimedia.org/wikipedia/commons/transcoded/8/83/' +
+                    'Elephants_Dream_%28high_quality%29.ogv/' +
+                    'Elephants_Dream_%28high_quality%29.ogv.360p.webm',
+                type: 'video/webm',
+                poster: 'http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/' +
+                    'Elephants_Dream_s1_proog.jpg/800px-Elephants_Dream_s1_proog.jpg'
+            },
+            {
+                title: 'LES TWINS - An Industry Ahead',
+                href: 'http://www.youtube.com/watch?v=zi4CIXpx7Bg',
+                type: 'text/html',
+                youtube: 'zi4CIXpx7Bg',
+                poster: 'http://img.youtube.com/vi/zi4CIXpx7Bg/0.jpg'
+            },
+            {
+                title: 'KN1GHT - Last Moon',
+                href: 'http://vimeo.com/73686146',
+                type: 'text/html',
+                vimeo: '73686146',
+                poster: 'http://b.vimeocdn.com/ts/448/835/448835699_960.jpg'
+            }
+        ], $('#blueimp-gallery').data('fullScreen')); 
+    });
+
+});
+
+/*-----------------FIN DE GALERIA--------------------*/
+</script>
+<!--FIN SCRIPTS GALERIA-->
+
+
+
+
+</head>
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header ">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!--- <a class="navbar-brand" href="#">Brand</a> -->
+                  <a href="index.html"><img src="../lbga/img/logo-lbga.png" style="height:60px;width:230px;margin-top:10px;"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="investigacion.html">Investigación</a></li>
+                    <li><a href="servicios-ngs.html">Servicios NGS</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li class="active"><a href="galeria.html">Galería<span class="sr-only">(current)</span></a></li>
+
+                  </ul>
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Busca aquí...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Buscar</button>
+                  </form>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+
+
+
+  <div class="container">
+    <div class="row galleries" style="margin-top:70px;"> 
+      <h2>Del recuerdo...</h2>
+      <div class="col-md-6 col-md-offset-3" style="padding:20px;">
+              <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+          <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false" >
+              <!-- The container for the modal slides -->
+              <div class="slides">
+              </div>
+              <!-- Controls for the borderless lightbox -->
+              <h3 class="title"></h3>
+              <a class="prev">‹</a>
+              <a class="next">›</a>
+              <a class="close">×</a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+              <!-- The modal dialog, which will be used to wrap the lightbox content -->
+              <div class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title"></h4>
+                          </div>
+                          <div class="modal-body next"></div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default pull-left prev">
+                                  <i class="glyphicon glyphicon-chevron-left"></i>
+                                  Previous
+                              </button>
+                              <button type="button" class="btn btn-primary next">
+                                  Next
+                                  <i class="glyphicon glyphicon-chevron-right"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="links">
+            <a href="img/galeria/recuerdo/recuerdo-1.jpg"  data-gallery="" >
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-1-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-2.jpg"  data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-2-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-3.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-3-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-4.jpg" data-gallery="">
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-4-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-5.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-5-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-6.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-6-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-7.jpg" data-gallery="">
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-7-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-8.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-8-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-9.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-9-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-10.jpg" data-gallery="">
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-10-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-11.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-11-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-12.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-12-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-13.jpg" data-gallery="">
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-13-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-14.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-14-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-15.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-15-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-16.jpg" data-gallery="">
+                  <img src="img/galeria/recuerdo/thumb/recuerdo-16-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-17.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-17-thumb.jpg">
+            </a>
+            <a href="img/galeria/recuerdo/recuerdo-18.jpg" data-gallery="">
+              <img src="img/galeria/recuerdo/thumb/recuerdo-18-thumb.jpg">
+            </a>
+          </div>
+      </div>
+    </div> 
+  </div>
+
+<!--FIN GALERIA RECUERDO-->
+
+<!--GALERIA LABORATORIO-->
+
+
+  <div class="container">
+    <div class="row galleries"> 
+      <h2>Laboratorio...</h2>
+      <div class="col-md-6 col-md-offset-3" style="padding:20px;">
+              <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+          <div id="blueimp-gallery-2" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false" >
+              <!-- The container for the modal slides -->
+              <div class="slides">
+              </div>
+              <!-- Controls for the borderless lightbox -->
+              <h3 class="title"></h3>
+              <a class="prev">‹</a>
+              <a class="next">›</a>
+              <a class="close">×</a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+              <!-- The modal dialog, which will be used to wrap the lightbox content -->
+              <div class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title"></h4>
+                          </div>
+                          <div class="modal-body next"></div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default pull-left prev">
+                                  <i class="glyphicon glyphicon-chevron-left"></i>
+                                  Previous
+                              </button>
+                              <button type="button" class="btn btn-primary next">
+                                  Next
+                                  <i class="glyphicon glyphicon-chevron-right"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="links-2">
+            <a href="img/galeria/laboratorio/lab-1.jpg"  data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-1-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-2.jpg"  data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-2-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-3.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-3-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-4.jpg" data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-4-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-5.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-5-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-6.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-6-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-7.jpg" data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-7-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-8.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-8-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-9.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-9-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-10.jpg" data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-10-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-11.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-11-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-12.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-12-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-13.jpg" data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-13-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-14.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-14-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-15.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-15-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-16.jpg" data-gallery="">
+                  <img src="img/galeria/laboratorio/thumb/lab-16-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-17.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-17-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-18.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-18-thumb.jpg">
+            </a>
+            <a href="img/galeria/laboratorio/lab-19.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-19-thumb.jpg">
+            </a>
+             <a href="img/galeria/laboratorio/lab-20.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-20-thumb.jpg">
+            </a> 
+            <a href="img/galeria/laboratorio/lab-21.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-21-thumb.jpg">
+            </a>
+           <a href="img/galeria/laboratorio/lab-22.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-22-thumb.jpg">
+            </a> 
+           <a href="img/galeria/laboratorio/lab-23.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-23-thumb.jpg">
+            </a> 
+           <a href="img/galeria/laboratorio/lab-24.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-24-thumb.jpg">
+            </a> 
+           <a href="img/galeria/laboratorio/lab-25.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-25-thumb.jpg">
+            </a> 
+           <a href="img/galeria/laboratorio/lab-26.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-26-thumb.jpg">
+            </a> 
+           <a href="img/galeria/laboratorio/lab-27.jpg" data-gallery="">
+              <img src="img/galeria/laboratorio/thumb/lab-27-thumb.jpg">
+            </a> 
+          </div>
+      </div>
+    </div> 
+  </div>
+
+  <!--FIN GALERIA LABORATORIO-->
+
+  <!--GALERIA CONGRESOS-->
+
+  <div class="container">
+    <div class="row galleries" style="margin-bottom:100px;"> 
+      <h2>Congresos por el mundo...</h2>
+      <div class="col-md-6 col-md-offset-3" style="padding:20px;">
+              <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+          <div id="blueimp-gallery-3" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false" >
+              <!-- The container for the modal slides -->
+              <div class="slides">
+              </div>
+              <!-- Controls for the borderless lightbox -->
+              <h3 class="title"></h3>
+              <a class="prev">‹</a>
+              <a class="next">›</a>
+              <a class="close">×</a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+              <!-- The modal dialog, which will be used to wrap the lightbox content -->
+              <div class="modal fade">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title"></h4>
+                          </div>
+                          <div class="modal-body next"></div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default pull-left prev">
+                                  <i class="glyphicon glyphicon-chevron-left"></i>
+                                  Previous
+                              </button>
+                              <button type="button" class="btn btn-primary next">
+                                  Next
+                                  <i class="glyphicon glyphicon-chevron-right"></i>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="links-3">
+            <a href="img/galeria/congresos/congreso-1.jpg"  data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-1-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-2.jpg"  data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-2-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-3.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-3-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-4.jpg" data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-4-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-5.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-5-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-6.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-6-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-7.jpg" data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-7-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-8.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-8-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-9.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-9-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-10.jpg" data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-10-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-11.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-11-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-12.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-12-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-13.jpg" data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-13-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-14.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-14-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-15.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-15-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-16.jpg" data-gallery="">
+                  <img src="img/galeria/congresos/thumb/congreso-16-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-17.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-17-thumb.jpg">
+            </a>
+            <a href="img/galeria/congresos/congreso-18.jpg" data-gallery="">
+              <img src="img/galeria/congresos/thumb/congreso-18-thumb.jpg">
+            </a>
+          </div>
+      </div>
+    </div> 
+  </div>
+
+<!--FIN GALERIA CONGRESOS-->
+
+  <footer>
+    <div class="row">
+      <h2>Contáctanos</h2>
+      <h3>Laboratorio de Biotecnología y Genómica Acuícola</h3>
+      <div class="col-md-3">
+        <span class="glyphicon glyphicon-map-marker"></span><h4>Dirección</h4>
+        <p>Universidad de Concepción</p>
+        <p>Centro de Biotecnología</p>
+        <p>Barrio Universitario s/n</p>
+        <p>Casilla 160-C</p>
+        <p>Concepción</p>
+      </div>
+      <div class="col-md-2">
+        <span class="glyphicon glyphicon-earphone"></span><h4>Teléfonos</h4>
+        <p>(56)(41) 220 342</p>
+        <p>(56)(41) 220 3996</p>
+        <h5>Laboratorio</h5>
+        <p>(56)(41) 220 4402</p>
+      </div>
+      <div class="col-md-3">
+        <span class="glyphicon glyphicon-envelope"></span><h4>E-mail</h4>
+        <p>claufuentealba@udec.cl</p>
+      </div>
+      <div class="col-md-4 logos-footer">
+        <img src="../lbga/img/incar-logo.png" style="margin-right:50px"/>
+        <img src="../lbga/img/udec-logo.png" style="margin-right:30px"/>
+        <img src="../lbga/img/cbt-logo.png" style="margin:30px 30px"/>
+      </div>
+    </div>
+  </footer>
+  <div class="row" id="copyright">
+    <p>2015 © Todos los Derechos Reservados</p>
+  </div>
+
+ 
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+  <script src="js/vendor/bootstrap.min.js"></script>
+  
+  <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/vendor/bootstrap-image-gallery.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+
+
+</body>
+</html>

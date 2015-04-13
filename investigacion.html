@@ -1,0 +1,1031 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header ">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!--- <a class="navbar-brand" href="#">Brand</a> -->
+                  <a href="index.html"><img src="../lbga/img/logo-lbga.png" style="height:60px;width:230px;margin-top:10px;"/></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li class="active"><a href="investigacion.html">Investigación<span class="sr-only">(current)</span></a></li>
+                    <li><a href="servicios-ngs.html">Servicios NGS</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+
+                  </ul>
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Busca aquí...">
+                    </div>
+                    <button type="submit" class="btn btn-default">Buscar</button>
+                  </form>
+
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+
+
+
+            <center><div class="container">
+
+              <div class="row">
+                <div class="col-md-12">
+
+                  <div class="row intro-row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 text-intro">
+                      <p>Nuestras líneas de investigación son basadas principalmente en genómica molecular de organismos marinos. En este contexto, hemos desarrollado investigación en análisis genético mediante genes mitocondriales y nucleares  de poblaciones marinas explotadas. Adicionalmente, el LBGA cuenta con el equipo y la experiencia para el desarrollo de marcadores microsatélites (SSR) y polimorfísmos de un único nucleótido (SNP) a partir de librerías de cDNA y DNA secuenciadas mediante plataformas NGS (Next Generation Sequencing) como pirosecuenciación 454 y secuenciación por síntesis de Illumina. Nuestras preguntas de investigación se han orientado específicamente hacia el entendimiento de las respuestas transcriptómicas de organismos marinos frente al ambiente, sea éste natural y en condiciones de cautiverio (acuicultura). En éste punto, las respuestas transcriptómicas frente a patógenos (inmunogenómica) es un tópico principal de nuestro laboratorio. De esta forma para abordar nuestras preguntas hemos integrado tecnologías de ultima generación y análisis bioinformáticos. Paralelamente hemos generado experiencia en caracterización molecular de genes candidatos, clonación y evaluación de expresión génica mediante QPCR y HRMA.</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
+                  
+                  <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs row dna-chain" role="tablist" id="myTab">
+                      <li class="col-md-1">
+                        <img src="../lbga/img/dna-png/left-piece.png" style="float:right;"/>
+                      </li>
+                      <li role="presentation" class="active col-md-2" id="publicaciones-bg">
+                        <a href="#publicaciones" aria-controls="publicaciones" role="tab" data-toggle="tab">
+                          Publicaciones
+                        </a>
+                      </li>
+                      <li role="presentation" class="col-md-2" id="proyectos-lbga-bg">
+                        <a href="#proyectos-lbga" aria-controls="proyectos-lbga" role="tab" data-toggle="tab">
+                          Proyectos LBGA
+                        </a>
+                      </li>
+                      <li role="presentation" class="col-md-2" id="congresos-bg">
+                        <a href="#congresos" aria-controls="congresos" role="tab" data-toggle="tab">
+                          Congresos
+                        </a>
+                      </li>
+                      <li role="presentation" class="col-md-2" id="proyectos-transcriptomicos-bg">
+                        <a href="#proyectos-transcriptomicos" aria-controls="proyectos-transcriptomicos" role="tab" data-toggle="tab" style="padding-bottom:59px;">
+                          Proyectos Transcriptómicos
+                        </a>
+                      </li>
+                      <li role="presentation" class="col-md-2" id="cursos-bg">
+                        <a href="#cursos" aria-controls="cursos" role="tab" data-toggle="tab">
+                          Cursos
+                        </a>
+                      </li>
+                      <li class="col-md-1">
+                        <img src="../lbga/img/dna-png/right-piece.png" style="float:left;margin-top:4px;"/>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                      <div role="tabpanel" class="tab-pane fade in active" id="publicaciones">
+                        <div class="publicaciones-foto"></div>  
+                        <div class="dna-content"> 
+                          <h3>2004</h3> 
+                          <p><strong>1.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., M. A. del Río Portilla., V. Kober, (2004). Karyotype of the red abalone Haliotis rufescens (Archaeogastropoda: Haliotidae) using image analysis.Journal of Shellfish Research 23(1): 205-209.</p> 
+
+                          <h3>2005</h3>
+                          <p><strong>2.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., del Río-Portilla, M. A., Cross, I., Merlo, A., Rebordinos, L. (2005). Fluorescence in situ hybridization of rDNA, telomeric (TTAGGG)n and (GATA)n repeats in the red abalone Haliotis rufescens (Archaeogastropoda: Haliotidae). Hereditas 142: 73-79.</p>
+
+                          <p><strong>3.</strong> Gallardo-Escárate, C., Álvarez-Borrego J,. von Brand Skopnik, E., del Río-Portilla, M. A.(2005). Genome size estimation in two populations of the northern scallop Argopecten purpuratus (Lamarck, 1879) using fluorescence image analysis. Journal of Shellfish Research 24(1): 55-60.</p>
+
+                          <p><strong>4.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., Bueno, M. A., del Río Portilla, M. A. von Brand Skopnik, E. Analysis of chromosomal DNA contents in Pacific red abalone Haliotis rufescens (Archaeogastropoda: Haliotidae) by fluorescence image analysis. Journal of Shellfish Research 24(4): 1161-1168.</p>
+
+                          <p><strong>5.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., del Río-Portilla, M. A., Cross, I., Merlo, A., Rebordinos, L. 2005. Karyotype analysis and chromosomal localization by FISH of ribosomal DNA, telomeric (TTAGGG)n and (GATA)n repeats in Haliotis fulgens and H. corrugata (Archaeogastropoda: Haliotidae). Journal of Shellfish Research 24(4): 1153-1160.</p>
+
+                          <p><strong>6.</strong> Gallardo-Escárate, C., J. Álvarez-Borrego., M. Á. del Río-Portilla. (2005). DAPI-fluorescent fading: a problem in microscopy or a way to measure nuclear DNA content? ICO XX, International Conference on Optics, Biomedical Optics, Vol. 6026, 0303-06, Changchun, China.</p>
+
+                          <p><strong>7.</strong> Álvarez-Borrego, J., Kober, V., Gallardo-Escarate, C., Chávez-Sánchez, M. C., E. Fájer-Ávila and M. A. Bueno. (2005). Fusion Algorithm for Color Microbiological Organisms Images In Automatized Microscopes. ICO XX, International Conference on Optics, Optical Processing, Vol. 6027, 0409-123, Changchun, China.</p>
+
+                          <h3>2006</h3>
+                          <p><strong>8.</strong> Mouriño-Pérez, R., Álvarez-Borrego, J., Gallardo-Escárate, C. (2006). Optical color correlation for the recognition of Vibrio cholerae O1 in laboratory and environmental samples. Revista de Biología Marina 41(1): 77-86.</p>
+
+
+                          <h3>2007</h3>
+                          <p><strong>9.</strong> Gallardo-Escárate, C., Álvarez-Borrego J, M. A. del Río-Portilla. (2007). Relationship between DAPI-Fluorescent fading and nuclear DNA content: an alternative method to DNA quantification? Biological Research 40: 29-40.</p>
+
+                          <p><strong>10.</strong> Gallardo-Escárate, C., Goldstein-Vásquez, J., M. Thiel. (2007). Individual identification of decapod crustaceans I: color patterns in rock shrimp (Rhynchocinetes typus). Journal of Crustacean Biology 27(3): 393-398.</p>
+
+                          <p><strong>11.</strong> Gallardo-Escárate, C., von Brand Skopnik, E., M. A. del Río Portilla. (2007). Karyotype composition in three California abalones and their relationship with genome size: an image analysis approach. Journal of Shellfish Research 26(3): 1-8.</p>
+
+                          <p><strong>12.</strong> Álvarez-Borrego, J., Gallardo-Escárate, C., V. Kober and M. López-Bonilla. 2007. Genome size: a new method. Proceedings of SPIE - Volume 6422. Sixth Symposium Optics in Industry, Julio C. Gutiérrez-Vega, Josué Dávila-Rodríguez, Carlos López-Mariscal, Editors, 642204.</p>
+
+                          <h3>2008</h3>
+                          <p><strong>13.</strong> Lafarga-De la Cruz, F., Valenzuela-Bustamante, M., Del Río-Portilla, M., Gallardo-Escárate, C. (2008). Genomic Integrity evaluation in sperm of Choromytilus chorus (Molina, 1782) by comet assay. Gayana 72(1): 36-44.</p>
+
+                          <p><strong>14.</strong> Aguilera-Muñoz, F., Valenzuela-Muñoz, V., Gallardo-Escárate, C. (2008). Authentication of commercial Chilean mollusks using ribosomal internal transcribed spacer (ITS) as specie-specific DNA marker. Gayana 72(2): 178-187.</p>
+
+                          <h3>2009</h3>
+                          <p><strong>15.</strong> Aguilera-Muñoz, F., Lafarga-Cruz, F., Gallardo-Escárate, C. (2009). Análisis molecular de gastródos chilenos comerciales basado en secuencias de 16S ARNr, COI y ITS1-5.8S rDNA-ITS2. Gayana 73(1): 17-27.</p>
+
+                          <h3>2010</h3>
+                          <p><strong>16.</strong> Segovia, N., Gallardo-Escárate, C., Haye-Molina, P. (2010). Development and characterization of ten microsatellite loci from the South-East Pacific commercial brachyuran crab Homalaspis plana. Molecular Ecology Resources 10(6): 1098–1105.</p>
+
+                          <p><strong>17.</strong> Hernández S, Gallardo-Escárate, C. Alvarez-Borrego, J., González, MT., PA, Haye. (2010). A multidisciplinary approach to identify pelagic shark fins by molecular, morphometric and digital correlation data. Hidrobiológica 2010, 20 (1): 71-80.</p>
+
+                          <p><strong>18.</strong> Lafarga-De la Cruz, F., Aguilera-Muñoz, Del Río-Portilla, M., Gallardo-Escárate, C. (2010). Genetic variability of cultured populations of red abalone in Chile: an approach based on heterologous microsatellites. Journal of Shellfish Research 29(3): 709-715.</p>
+
+                          <p><strong>19.</strong> Lafarga de la Cruz, F., Aguilera-Muñoz, F., Amar-Basulto, G., Del Río-Portilla, M., Gallardo-Escárate, C. (2010). Genetic analysis of an artificially produced hybrid abalone (Haliotis rufescens x H. discus hannai) in Chile. Journal of Shellfish Research 29(3): 717-724.</p>
+
+                          <p><strong>20.</strong> Vivanco-Aranda, M., Gallardo-Escárate, C., Del Río-Portilla, M. (2010). Low-density culture of red abalone juveniles, Haliotis rufescens Swainson 1822, recirculating aquaculture system and flow-through system. Aquaculture Research 41(7): 3-12.</p>  
+
+                          <h3>2011</h3>
+
+                          <p><strong>21.</strong> Salinas-Clarot, K., Gutiérrez, A., Núñez-Acuña, G., Gallardo-Escárate, C. (2011). Molecular characterization and gene expression of ferritin in red abalone (Haliotis rufescens). Journal of Fish and Shellfish Immunology, 30(1): 430-433.</p>
+
+                          <p><strong>22.</strong> Amar-Basulto, G., Lafarga-De la Cruz, F., Gallardo-Escárate, C. (2011). Karyotype analysis of interspecific hybrids between Haliotis rufescens and H. discus hannai. Aquaculture Research 42(10): 1460-1466.</p>
+
+                          <p><strong>23.</strong> Lafarga-De la Cruz, F., Gallardo-Escárate, C. (2011). Intra and interspecies hybrids in Haliotis: natural and experimental evidence and its impact on abalone aquaculture. Reviews in Aquaculture 3(2) 74-99.</p>
+
+                          <p><strong>24.</strong> Gallardo-Escárate, C., Valenzuela, M., Haye, P. (2011). Isolation and characterization of 12 new microsatellite loci for Chilean rock shell Thais chocolata (Gastropoda: Muricidae). Molecular Ecology Resources, 11 (3): 586-589.</p>
+
+                          <p><strong>25.</strong>Palfner,G., Valenzuela, V., Gallardo-Escárate., Parra,L., Becerra,J. and Silva, M. (2011). Cordyceps cuncunae (Ascomycota, Hypocreales), a new pleoanamorphic species from temperate rainforest in southern Chile. Mycological Progres, DOI:10.1007/s11557-011-0784-8.</p> 
+
+                          <p><strong>26. </strong> Cárdenas, L., Sánchez, S., Gomez, D., Fuenzalida, G., Gallardo-Escárate, C, Tanguy, A. (2011). Transcriptome analysis in Concholepas concholepas (Gastropoda, Muricidae): Mining and characterization of new genomic and molecular markers. Marine Genomics 4(3): 197-205.</p>
+
+                          <p><strong>27.</strong> Haye, P. A, Segovia, N., Gallardo-Escárate, C. (2011). Novel microsatellite loci for the Chilean northern scallop Argopecten purpuratus. Permanent Genetic Resources Note. DOI: 10.1111/j.1755-0998.2011.03088.x
+
+                            <p><strong>28.</strong> Lafarga-De la Cruz, F., Núñez-Acuña, G., Gallardo-Escárate, C. (2011). Hybridization between Haliotis rufescens and H. discus hannai: evaluation of fertilization, larval development, growth and thermal tolerance. Aquaculture research, DOI: 10.1111/j.1365-2109.2012.03121.x.</p>
+
+                            <h3>2012</h3>
+                            <p><strong>29.</strong> Haye, P. A., Segovia, N., Vera, R., Gallardo, M. A., Gallardo-Escárate, C. (2012). Authentication of commercialized crabmeat in Chile using DNA Barcoding. Food Control. 25: 239-244.</p>
+
+                            <p><strong>30.</strong> Dupré, E., Gómez, D., Araya, A., Gallardo-Escárate, C. (2012). Role of egg surface glycoconjugate in the fertilization of the rock shrimp Rhynchocinetes typus (Milne-Edwards, 1837). Lat. Am. J. Aquat. Res. DOI: 10.3856.</p> 
+
+                            <p><strong>31.</strong> Aguilar-Espinoza, A., Guzmán-Riffo, B., Haye, P. A & Gallardo-Escárate, C. (2012) Mining of EST-SSR from pyrosequencing 454 in the surf clam Mesodesma donacium (Lamark, 1818). Conservation Genetics Resources. DOI: 10.1007/s12686-012-9652-3.</p>
+
+                            <p><strong>32.</strong> Núñez-Acuña, G., Tapia, F., Haye, P. A & Gallardo-Escárate, C. (2012). Gene expression analysis in Mytilus chilensis populations reveals local patterns associated with ocean environmental conditions. Journal of Experimental Marine Biology and Ecology. DOI: 10.1016/j.jembe.2012.03.024.</p>
+
+                            <p><strong>33.</strong> Núñez-Acuña, G., Aguilar-Espinoza, A., Chávez-Mardones, J. & Gallardo-Escárate, C. (2012). Ubiquitin conjugating enzyme E2 gene associated with pathogen response in Concholepas concholepas: SNP identification and transcription expression. Journal of Fish and Shellfish Immunology. dx.doi.org/10.1016/j.fsi.2012.08.024.</p>
+
+                            <p><strong>34.</strong> Valenzuela, V., Bueno M., Gallardo-Escárate, C. (2012). Characterization of the transcriptomes of Haliotis rufescens reproductive tissues.pdf. Aquaculture Research. doi:10.1111/are.12044.</p>
+
+                            <p><strong>35.</strong> Gallardo-Escárate, C. & Amar-Basulto, G. (2012). FISH mapping of the VERL gene in two abalone species (Haliotis rufescens and H. discus hannai) and their inter-species hybrids. Aquaculture International. Submitted.</p> 
+
+                            <p><strong>36.</strong> Núñez-Acuña, G., Aguilar-Espinoza, A. & Gallardo-Escárate, C. (2012). Complete mitochondrial genome of Concholepas concholepas inferred by 454 pyrosequencing and mtDNA gene expression of two wild populations. Comparative Biochemistry and Physiology - Part D. http://dx.doi.org/10.1016/j.cbd.2012.10.004.</p>
+
+                            <p><strong>37.</strong> Gallardo-Escárate, C., Aguilar-Espinoza, A., Núñez-Acuña, G., V. Valenzuela-Muñoz, Maldonado-Aguayo & P. A. Haye. (2012). SNP discovery and gene annotation in the surf clam Mesodesma donacium. Aquaculture Research. doi:10.1111/are.12273.</p> 
+
+                            <p><strong>38.</strong> Valenzuela, V. & Gallardo-Escárate, C. (2012). SNP discovery and high resolution melting analysis from massive transcriptome sequencing in the California red abalone Haliotis rufescens. Marine Genomics. http://dx.doi.org/10.1016/j.margen.2012.12.003.</p>
+
+                            <p><strong>39.</strong> Aguilar-Espinoza, A., Valderrama-Aravena, N., Lafarga, F & Gallardo-Escárate, C. (2012). Development of novel polymorphic EST-SSR markers in Californian abalone Haliotis rufescens and genetic analysis in wild and hatchery-bred populations. Aquaculture Research.doi: 10.1111/are.12141.</p>
+
+                            <p><strong>40.</strong> Lafarga-De la Cruz, F., Aguilar-Espinoza, A. & Gallardo-Escárate, C. (2012). Parentage assignment in hybrid abalones (Haliotis rufescens x Haliotis discus hannai) based on microsatellite DNA markers. Aquaculture Research, DOI: 10.1111/are.12169.</p>
+
+                            <p><strong>41.</strong> Núñez-Acuña, G., Aballay, A., Astuya, A & Gallardo-Escarate, C. (2012). Transcriptome response of Mytilus galloprovincialis exposed in vivo to Saxitoxin (STX). Journal Molluscan Studies. doi: 10.1093/mollus/eyt030.</p> 
+
+                            <p><strong>42.</strong> Maldonado-Aguayo, W., Núñez-Acuña, G., Valenzuela-Muñoz, V., Chávez-Mardones, J., Gallardo-Escárate, C.  (2012). Molecular characterization of two kazal-type serine proteinase inhibitor genes in the surf clam Mesodesma donacium exposed to Vibrio anguillarum. Journal of Fish and Shellfish Immunology. http://dx.doi.org/10.1016/j.fsi.2013.03.356.</p>
+
+                            <p><strong>43.</strong> Chávez-Mardones, J., Valenzuela-Muñoz, V., Nuñez-Acuña, V., Maldonado-Aguayo, W., Gallardo-Escárate., C. (2012). Characterization of ferritin and identification of single nucleotide polymorphism (SNP) associated with innate immune response in Concholepas concholepas. Journal of Fish and Shellfish Immunology. http://dx.doi.org/10.1016/j.fsi.2013.06.028.</p>
+
+                            <h3>2013</h3>
+                            <p><strong>44.</strong> Gallardo-Escárate. C., Núñez-Acuña, G. & Aguilar-Espinoza, A. (2013). SNP discovery from transcriptome sequencing in Concholepas concholepas and validation using high resolution melting analysis. Conservation Genetics Resources. http://dx.doi.org/10.1007/s12686-013-9968-7.</p>
+
+                            <p><strong>45.</strong> Alarcón-Matus, P., Valenzuela-Munoz, V. and Gallardo-Escárate, C. (2013). Modulation of insulin-like receptor gene (MdIR) in response to feeding in the surf clam Mesodesma donacium. Journal Molluscan Studies, Accepted.</p> 
+
+                            <p><strong>46.</strong> Morales-Collío, K., Valenzuela-Munoz, V. and Gallardo-Escárate, C. (2013). Myostatin gene in the northern Chilean scallop Argopecten purpuratus (ApMSTN) reveals differences between wild and hatchery-bred populations. Journal Molluscan Studies. Doi:10.1093/mollus/eyu005.</p>
+
+                            <p><strong>47.</strong> Núñez-Acuña, G. & Gallardo-Escárate. C. (2013). Myostatine gene in Mytilus chilensis evidences high level of polymorphism and ubiquitous transcript expression. Gene. 10.1016/j.gene.2013.11.067.</p>
+
+                            <p><strong>48.</strong> Valenzuela-Muñoz, V. & Gallardo-Escárate. C. (2013). Molecular cloning and expression of IRAK-4, IL-17 and I-B genes in Haliotis rufescens challenged to Vibrio anguillarum, Journal of Fish and Shellfish Immunology. DOI: 10.1016/j.fsi.2013.12.015.</p>
+
+                            <p><strong>49.</strong> Maldonado-Aguayo, W. & Gallardo-Escárate, C. (2013). Immune response of oxidative stress and degradative enzyme genes in the surf clam Mesodesma donacium. Journal of Molluscan Studies, submitted.</p>
+
+                            <p><strong>50.</strong> Chávez-Mardones, J. & Gallardo-Escárate., C. (2013). Discovery of immune-related genes in the marine snail Concholepas concholepas by high-throughput transcriptome sequencing. Marine Genomics, submitted.</p>
+
+                            <p><strong>51.</strong> Gallardo-Escárate., C. and Núñez-Acuña, G. (2013). RNA-seq analysis reveals a complex immune response against saxitoxin in the mussel Mytilus chilensis. PlosOne.</p>
+
+                            <p><strong>52.</strong> Núñez-Acuña, G. & Gallardo-Escárate., C. (2013). High-throughput transcriptome sequencing for SNPs discovery associated to immune-relevant genes in the mussel Mytilus chilensis. Journal of Fish and Shellfish Immunology. 10.1016/j.fsi.2013.09.028.</p>
+
+                            <p><strong>53.</strong> Gallardo-Escárate. C., Valenzuela-Muñoz, V., Núñez-Acuña, G. (2013). RNA-seq analysis using de novo assembled transcriptome from salmon lice Caligus rogercresseyi. PlosOne. 10.1371/journal.pone.0092239.</p>
+
+                            <p><strong>54.</strong> Gallardo-Escárate. C., Valenzuela-Muñoz, V., Núñez-Acuña, G., Chávez-Mardones, J., Maldonado-Aguayo, W.   (2013). Transcriptome analysis of couch potato (CPO) protein reveals expression pattern associated to early development in salmon lice Caligus rogercresseyi. Gene. 10.1016/j.gene.2013.11.100.</p>
+
+                            <p><strong>55.</strong> Núñez-Acuña, G. & Gallardo-Escárate. C. (2013). High-throughput SNP discovery and transcriptome expression profiles from the salmon louse Caligus rogercresseyi (Copepoda: Caligidae). Comparative Biochemistry and Physiology D. Doi: 10.1016/j.cbd.2014.01.003.</p>
+
+                            <p><strong>56.</strong> Valenzuela-Muñoz, V. & Gallardo-Escárate. C. (2013). Caligus rogercresseyi P-glycoprotein gene (Cr-Pgp): Molecular characterization and transcription analysis associated to pyrethroid resistance. Environmental Sciences. in press.</p>
+
+                            <p><strong>57.</strong> Valenzuela-Muñoz, V. & Gallardo-Escárate. C. (2013). TLR and IMD signaling pathways from Caligus rogercresseyi (Crustacea: Copepoda): In silico gene expression and SNPs discovery. Fish and Shellfish Immunology. http://dx.doi.org/10.1016/j.fsi.2013.12.019.</p>
+
+                            <p><strong>58.</strong> Chávez-Mardones, J & Gallardo-Escárate. C (2013). Deltamethrin (AlphaMax) reveals modulation of genes related to oxidative stress in the ectoparasite Caligus rogercresseyi: implications on delousing drugs effectiveness. Aquaculture. 10.1016/j.aquaculture.2014.06.017.</p>
+
+                            <p><strong>59.</strong> Maldonado-Aguayo, W. & Gallardo-Escárate. C. (2013). Increased transcriptional response of SERPINs evidences a putative mechanism of immune evasion in the salmon louse Caligus rogercresseyi. Marine Genomics. http://dx.doi.org/10.1016/j.margen.2014.04.006.</p> 
+
+                            <p><strong>60.</strong> Gonçalves, A. T., Farlora, R. & Gallardo-Escárate, C. (2013). Transcriptome survey of lipid metabolic pathways involved in energy production and ecdysteroids synthesis of the salmon louse Caligus rogercresseyi (Crustacea: Copepoda). Comparative Biochemistry and Physiology B. Accepted.</p>
+
+                            <p><strong>61.</strong> Gallardo-Escárate. C., Valenzuela-Muñoz, V. & Núñez-Acuña, G. (2013). Prohibitin-2 gene reveals sex-related differences in the salmon louse Caligus rogercresseyi. BMC Genetics.</p>
+
+                            <h3>2014</h3>
+                            <p><strong>62.</strong> Farlora, R., Araya-Garay, J. & Gallardo-Escárate, C. (2014). Discovery of sex-related genes by high-throughput transcriptome sequencing from the salmon louse Caligus rogercresseyi. Marine Genomics. Doi.org/10.1016/j.margen.2014.02.005.</p>
+
+                            <p><strong>63.</strong> Núñez-Acuña, G. & Gallardo-Escárate. C. (2014). Insights into the olfactory system in the ectoparasite Caligus rogercresseyi: Molecular characterization and gene transcription analysis of novel ionotropic receptors. Parasitology research. Accepted.</p>
+
+                            <p><strong>64.</strong> Chávez-Mardones, J. & Gallardo-Escárate., C. (2014). Immune response of apoptosis-related cysteine peptidases from red abalone Haliotis rufescens (HrCas8 and HrCas3): molecular characterization and transcription expression. Fish and Shellfish Immunology. http://dx.doi.org/10.1016/j.fsi.2014.04.027.</p>
+
+                            <p><strong>65.</strong> Valenzuela-Miranda, D., Cabrejos, M. E., Cisterna, D., Yañez, J.M., Gallardo-Escárate, C. (2014). New insights of the transcriptional response of Atlantic salmon (Salmo salar) during infectious salmon anemia virus (ISAV) infection revealed by RNA-Seq analysis. PlosOne. Accepted.</p>
+
+                            <p><strong>66.</strong> Valenzuela-Muñoz, V. Araya-Garay, J. & Gallardo-Escárate. C. (2014). Transcription expression of Myostatin and Activin receptor type II evidences association with differential growth rate in the red abalone Haliotis rufescens (Gastropoda: Haliotidae). Aquaculture Research. in press.</p>
+
+                            <p><strong>67.</strong> Valenzuela-Muñoz, V. Peña, A. & Gallardo-Escárate. C. (2014). Assessment of transcription expression for candidate genes related to antiparasitic resistance in the salmon louse Caligus rogercresseyi (Copepoda: Caligidae). PlosOne. Submitted.</p>
+
+                            <p><strong>68.</strong> Maldonado-Aguayo, W. & Gallardo-Escárate. C. (2014). A galectin with quadruple-domain from red abalone Haliotis rufescens involved in the innate immune response against Vibrio anguillarum. Fish and Shellfish Immunology.  DOI: 10.1016/j.fsi.2014.06.013.</p> 
+
+                            <p><strong>69.</strong> Gallardo-Escárate. C., Valenzuela-Muñoz, V. & Núñez-Acuña, G., Chávez-Mardones, J., Maldonado-Aguayo, W. (2014). Transcriptome insights into ABC transporter gene family from the salmon louse Caligus rogercresseyi. BMC Genomics.</p>
+
+                            <p><strong>70.</strong> Valenzuela-Miranda, D., Cabrejos, M. E., Yañez, J. M., C. Gallardo-Escárate. (2014). From a viral perspective: Infectious salmon anemia virus (ISAV) transcriptome during the infective process in Atlantic salmon (Salmo salar). Veterinary Immunology and Immunopathology. Submitted.</p>
+
+                            <p><strong>71.</strong> Valenzuela-Muñoz, V., Chávez-Mardones, J. & Gallardo-Escárate. C. (2014). RNA-Seq analysis evidences a multiple gene responses in Caligus rogercresseyi exposed to organophosphate Azamethiphos. PlosOne. Submitted.</p>
+
+                            <p><strong>72.</strong> Chovar –Vera, O., Valenzuela-Muñoz, V. & Gallardo-Escárate. C. (2014). Molecular characterization of Collagen IV evidences early transcription expression related to immune response against bacterial infection in the red abalone (Haliotis rufescens). Fish and Shellfish Immunology. Submitted.</p>
+
+                            <p><strong>73.</strong> Chávez-Mardones, J. & Gallardo-Escárate., C. (2014). The transcriptomic response to deltamethrin (AlphaMaxTM) using deep-sequencing technology in the salmon louse Caligus rogercresseyi. Marine Biotechnology. Submitted.</p>
+                        </div>
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade" id="proyectos-lbga">
+                        
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="proyectos-lbga-foto"></div> 
+
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/01.jpg">
+                            <h4>2014 - 2018:</h4> 
+                            <h5>Proyecto FONDECYT N°1140862. Disentangling source-sink dynamics with spatial and temporal patterns of genomic diversity and structure in Mytilus chilensis and Pyura chilensis. Universidad Católica del Norte, Dra. Pilar Haye (PI). Universidad de Concepcion, Dr. Cristian Gallardo (co-PI). (M$198.000 CLP)</h5> 
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>This proposal aims at uncovering the source-sink dynamics of marine metapopulations using a genomic and transcriptomic approach. Two commercially exploited benthic species that inhabit Chile, the bivalve mollusk Mytilus chilensis and tunicate Pyura chilensis, will be used as model species. They have adispersive larval phase and sessile adults, and inhabit the heterogeneous marine environment. Larvae arriving at habitats that differ in quality from their source may be maladapted as a consequence of a phenotype-environment mismatch. Given local selective pressures in early life stages, realized connectivity among populations of a metapopulation can be much lower than predicted from larval dispersal potential. Sources and sinks defined in terms of habitat quality differ in their temporal sustainability. Sources are temporally stable, have a growth rate greater than zero, and a net export of propagules. Sinks, on the other hand, are characterized by having insufficient reproduction within the local population for the species to carry out its life history and are maintained by continued immigration from source habitats, making them temporally unstable.</p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>To date, characterization of the genetic structure of marine species in Chile has been restricted to the spatial structure of few putatively neutral loci, however, to uncover source-sink dynamics, it is crucial to incorporate the temporal perspective and to use a plethora of genetic markers. Source-sink dynamics should be ideally evaluated using both neutral and adaptive markers (affected by selection) in a temporal context; the former would allow disentangling the effects of neutral processes such as larval-supply while the later would uncover adaptive variation associated to the persistence of individuals in the local habitat. Counting with enough neutral and adaptive markers is currently possible for non-model taxa; Next Generation Sequencing (NGS) technologies provide a means to discover hundreds of markers for population level analysis. We will undertake three experimental approaches to disentangle source-sink dynamics.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/bacteria.jpg">
+                            <h4>2014 - 2016:</h4>
+                            <h5>Metatranscriptome modulation of pre- and probiotic dietary supplementation in rainbow trout (Oncorhynchus mykiss) under intensive aquaculture conditions. Dr. Ana Teresa Gonçalves (PI), Dr. Cristian Gallardo (Co-PI).</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>In this investigation it is proposed an evaluation of how prebiotic (mannanoligosacharide) and probiotic (Saccharomyces cerevisiae) modulate rainbow trout GI microbiome taxonomic diversity, abundance and core functions when under intensive production. It is also proposed an analysis on the microbiome metatranscriptomic modulation by pre- and probiotic dietary supplementation, investigating the pathways involved on those changes and correlating with phenotypic alterations. Using high-throughput sequencing techniques together with associated bioinformatic approaches and data analysis, complementing with physiological analysis and phenotypical validation, expected results include:</p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>a) identification of GI microbiome modulation pattern by prebiotics and probiotics when used as a nutritional strategy in intensively cultured fish; b) identification of the pathways involved on those modulations; and c) identification of GI microbiome novel genes related to immune response, stress response and nutritional and energy metabolism that are modulated by pre- and probiotics. Due to the novel character of the study, it is expected to acquire unprecedented information that will uncover functions, mechanisms of actions and potentialities of aquaculture fish gut microbiome, and will enlighten new nutritional and health management strategies that will be a key towards sustainable aquaculture and fish health allied with safety for the environment and for the consumers.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/pez.jpg">
+                            <h4>2012-2017:</h4>
+                            <h5>Interdisciplinary Center for Aquaculture Research (INCAR), Fourth National Competition for research Centers of Excellence in priority Areas, FONDAP 2011. Dr. C. Gallardo-Escarate, Deputy Director.</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>Aquaculture is the fastest growing sector in the food industry at a global level, with a growth rate of 7.2% annually since the 1970s. Chile, since the 1980s, has exhibited sustained growth in aquaculture activities, highlighting the production of salmonid and mytilids. The rapid growth of the national salmon industry, reflected in a strong increase in production until 2007, unfortunately generated a parallel increase in the necessary conditions for the appearance of outbreaks of infectious diseases in areas destined for farming centers. The ISA virus epidemic that began in 2008 generated an important socioeconomic crisis in the XIV and XI Regions with the loss of approximately 20,000 jobs. This situation, in conjunction with other sanitary and environmental management problems, has triggered a serious concern for strengthening ecological, economic and social sustainability in Chilean aquaculture. The fundamental objective of this proposal is the creation of the first Interdisciplinary Center for Sustainable Aquaculture Research (INCAR) in Chile. This Center will be established within the framework of a strategic alliance between three important research and academic institutions, the University of Concepcion, the Andres Bello University and the Austral University of Chile. In order to tackle the main issues and knowledge gaps related to the sustainable development of aquaculture in Chile, the main objectives of the INCAR are: </p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>(i) To generate ecologically, biologically, epidemiologically, oceanographically, economically and socially relevant knowledge for the optimal mitigation of aquaculture’s negative impacts on socio-ecological systems and for the design of incentives-based economic regulatory systems for aquaculture related activities, (ii) To produce cutting-edge knowledge on the impacts of aquaculture on ecosystems, including ecological, biological, economic and social dimensions, (iii) To contribute to the knowledge of complex biological processes (e.g. reproduction, physiological adaptation, pathogen vulnerability) in relevant species as a strategy to achieve sustainable aquaculture.INCAR’s research will primarily focus on salmonids and mytilids, currently the most cultivated species in Chile. The Center will also strengthen aquaculture diversification by studying the adaptive biological mechanisms required for the development of aquaculture of endemic species. The Center will not only contribute to the sustainable development of large-scale aquaculture, but also to small-scale aquaculture, making significant contributions to ensure that the development of mytiliculture in the Benthic Resource Management and Exploitation Areas (BRMAs) of the artisanal fisheries, that the Chilean state is promoting, is carried out under sustainable conditions.</p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>Furthermore, beyond its intranational collaborative ties, INCAR will establish and maintain robust international collaboration efforts with 5 international institutions of known scientific excellence: Grappe Interdisciplinaire de Génoprotéomique Appliquée (GIGA) (Belgium), Norwegian University of Science and Technology (Norway), Observatoire Océanologique de Banyuls-sur-Mer (Université Pierre et Marie Curie/CNRS, France), University of California at Santa Barbara (USA), and Universidad de Santiago de Compostela (Spain).</p> 
+                                <p>INCAR will implement an innovative program for scientific extension, technological transference and formation of advanced human resources through a closely knit collaboration plan with eight graduate programs belonging to the three Chilean institutions that comprise the Center, and the development of public/private collaboration in projects that enhance the awareness and implementation of sustainable aquaculture initiatives.</p>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/abalon.jpg">
+                            <h4>2012-2015:</h4>
+                            <h5>Proyecto 12IDL2-15119 I+D Aplicada InnovaChile Corfo “Generación de vacuna inhibitoria de Miostatina para incrementar el crecimiento de abalones rojo, como estrategia de mejoramiento productivo” (M$180.000 CLP)</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>Los factores tanto ambientales como genéticos que determinan el crecimiento en especies destinadas a acuicultura, es sin duda uno de los aspectos productivos más críticos debido a los altos costos involucrados en ciclos productivos de especies comerciales cuyas tasa de crecimiento son bajas. Alternativas tecnológicas basadas en programas de mejoramiento genético y transgenia, han demostrado ser soluciones de lento resultado o bien de aplicación compleja a nivel productivo debido a las regulaciones gubernamentales en el caso de los transgénicos. Por otra parte, las actuales tecnologías genómicas permiten la identificación de biomoleculas con uso potencial en la producción de animales debido a su funcionalidad en procesos biológicos como reproducción y crecimiento. Entre ellas, Miostatina (MSTN), ha sido descrita como una proteína inhibitoria del crecimiento muscular en varias especies de producción animal como ganado, cerdo y peces.</p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Adicionalmente, se ha demostrado que es posible inhibir MSNT tanto a nivel génico como proteico obteniéndose incrementos en masa muscular que van desde el 20-40%. Bajo este contexto la presente propuesta abordará uno de los mayores desafíos para la industria de abalón en Chile como es generar soluciones biotecnológicas que permitan incrementar la tasa de crecimiento del abalón rojo (Haliotis rufescens). En específico se desarrollará e implementará una vacuna recombinante del pro-dominio la que inhibirá MSNT a nivel de transcripción generando un aumento de la masa muscular de abalones. A nivel tecnológico y productivo se plantea que la generación de una vacuna inhibitoria de MSTN durante las últimas etapas del ciclo productivo de abalón, promoverá un incremento en la tasa de crecimiento (peso total partes blandas) y por tanto una disminución en los tiempos requeridos para alcanzar animales con un peso superior. </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h4>2013-2016:</h4> 
+                            <h5>Proyecto FONDECYT N°1130807. Molecular evolutionary underpinnings of a successful invasion: neutral and adaptive divergence and their causes among naturalized rainbow trout populations in two patagonian lakes differentially impacted by aquaculture. (Dr. Daniel Gómez (PI), Dr. Cristian Gallardo (Co-PI). (M$148.000 CLP).</h5> 
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>While our understanding of the ecological and economic impacts of exotic species has greatly increased during the last decade, especially in Chile, the evolutionary underpinnings of a successful invasion are yet to be fully grasped. Are there populations more invasive than others? How quickly may neutral and adaptive divergence arise among naturalized populations? What environmental factors and evolutionary forces may explain genetic divergence of naturalized populations? What genomic regions may be responsible for adaptive divergence among naturalized populations in different environments? Here we propose to evaluate the magnitude of neutral and adaptive divergence and their causes among naturalized rainbow trout (Oncorhynchus mykiss) populations from two lakes differentially impacted by aquaculture, using single nucleotide polymorphisms (SNPs) and differential gene expression (RNA-Seq).</p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Trout/steelhead is one of many species of Pacific salmonids, a charismatic group of fishes endemic to the northern hemisphere, that has been introduced worldwide due to its economic importance for recreational fisheries and aquaculture. In the northern Chilean Patagonia, rainbow trout has become widely established (“naturalized”) outside aquaculture facilities, including marine and freshwater environments, and is fully capable of breeding in the wild. It has been recently suggested that admixture between naturalized and farmed populations may significantly enhance invasive potential for trout, though this idea has not been tested at local scales. </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h4>2013-2016:</h4>
+                            <h5>Proyecto FONDECYT N° 1130629. Population genetic structure of the monogenean parasites, Benedenia cf seriolae and Zeuxapta cf seriolae, infesting natural populations of Seriola lalandi, and its implications for aquaculture. (Dra. María Teresa González (PI), Dr. Cristian Gallardo (Co-PI). (M$96.000 CLP)</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>Seriola lalandi is farmed successfully in Japan and Australia, but not free of sanitary problems. One of main problems are monogeneans Zeuxapta seriolae and Benedenia seriolae, both considered pathogens because have direct life cycle, short duration generations, high fecundity and when they are present in high prevalence and abundance produce mass mortalities and secondary infections. Among them, we recorded Zeuxapta cf seriolae with prevalence of 70% and Benedenia cf seriolae with prevalence of 20%. The prevalence of these parasites in the natural populations of Seriola lalandi of our coast imply a high potential of transmission to farmed yellowtail kingfish, and announce us thatthese parasites will be a serious problem for successfully development of aquaculture of Seriola lalandi in the northern Chile. These pathogens are treated in farmed of Japan and Australia with Hydrogen Peroxide and freshwater. However, the economic costs are very high (com. Pers, Dr. Ogawa). To mitigate the emergence of pathogens is crucial to incorporate genetic and demographic components of host-parasite system, besides of environmental factors. Thus, it is possible to implement effective protocols as response to diseases and mitigate their effects in the opportune time.</p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Molecular tools have been extensively used in productive systems, for example, to select progenitors, to detect pathogens, specially those difficult to cultivate, to identify genes associated to diseases, and to develop genetic programs focused to select individuals resistant to diseases. Recent studies have demonstrated that parasite load of one ectoparasite (copepod species) in natural host populations is determined by host heterocigocity (genetic diversity). This project proposes: 1) to study, in a temporal scale (2012-2015), the genetic structure of natural populations of S. lalandi and the genetic structures of Z. cf seriolae and B. cf seriolae populations, using molecular markers (microsatellites and SNP), in order to determine how many parasite populations are present in population or populations of S. lalandi arriving annually, in the summer season, at northern Chilean coast, 2) to evaluate inter-annual infestation patterns (abundances and prevalence) and biological traits of parasite populations (fecundity, body size and larval survival) and 3) to evaluate genetic resistence/tolerance of fish to be infested by one particular variant of parasite. This information is the first step in implementing protocols for rapid action to control and management of these emergent diseases in aquaculture of S.lalandi in the north of our country.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/mapa.jpg">
+                            <h4>2013-2015:</h4>
+                            <h5>Proyecto Postdoctorado FONDECYT 3130446 “Patrones de expresión de miRNA e identificación de SNPs asociados al proceso de maduración gonadal en la trucha arcoiris Oncorhynchus mykiss” (Dr. Rodolfo Farlora (PI), Dr. Cristian Gallardo (Co-PI). (M$65.000 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>El inicio de la pubertad comprende la transición desde un estado juvenil-inmaduro a un estado adulto-maduro, donde el individuo adquiere por primera vez su competencia reproductiva mediante la activación funcional del eje cerebro-pituitaria-gónada que controla la mayoría de los aspectos de la reproducción en vertebrados. La maduración sexual en peces es considerado un proceso crítico en las pisciculturas debido a que incide negativamente en el crecimiento de los peces y en la calidad de sus filetes, esto debido a la movilización de la energía para el desarrollo de las gónadas en desmedro del crecimiento somático. En la trucha arcoíris Oncorhynchus mykiss la maduración temprana de los machos constituye un problema importante, dado que estos pueden llegar a madurar antes de alcanzar el tamaño de cosecha, reduciendo su valor comercial. Actualmente existe gran cantidad de información disponible sobre los efectos de la pituitaria y las hormonas gonadales sobre la función reproductiva, así como también acerca de la regulación transcripcional de los genes y las rutas de señalización celular dentro de los tejidos reproductivos. Sin embargo, todavía es escaso el conocimiento sobre la regulación post-transcripcional de genes en estos tejidos.</p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>El reciente descubrimiento e identificación de microRNAs (miRNAs) ha significado un gran avance en la comprensión de los mecanismos moleculares implicados en la regulación post-transcripcional. Los miRNAs constituyen un grupo de pequeñas moléculas de RNA endógeno que no codifican para proteína y que se encuentran relacionados principalmente con el silenciamiento post-transcripcional de genes, uniéndose a los RNA mensajeros (mRNA) e impidiendo su traducción a proteína, actuando como reguladores de la expresión génica. Junto a lo anterior, la ocurrencia de polimorfismos de un único nucleótido (SNPs) dentro de regiones miRNAs puede ocasionar de igual forma cambios a nivel transcriptómico. A nivel post-transcripcional, cuando los SNPs ocurren en los sitios de unión objetivo localizados en 3′ UTRs, estos SNPs pueden llegar a modificar o destruir el acoplamiento de los miRNA, interfiriendo con la estabilidad y capacidad de translación del mRNA. Como hipótesis se propone que existen de patrones de expresión de miRNAs asociados al proceso de maduración gonadal en la trucha arcoiris. Así también, se postula la existencia de SNPs ligados a miRNAs, cuya variación alélica puede ser relacionada con los niveles de expresión de ciertos genes involucrados en el proceso de maduración gonadal.</p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>En esta investigación, proponemos caracterizar los cambios transcriptómicos de miRNAs durante la maduración gonadal de machos y hembras en la trucha arcoíris mediante el uso de secuenciación masiva (RNA-seq). Junto a lo anterior, proponemos evaluar la asociación de SNPs ligados a miRNA y evaluar su asociación con genes candidatos relacionados con en este proceso reproductivo. Los resultados esperados de este proyecto son: 1. Identificación por primera vez de un conjunto de miRNAs relacionados con la regulación del proceso de maduración gonadal en O. mykiss. 2. Identificación y validación de SNPs ligados a miRNAs durante la maduración gonadal. 3. Determinación de la asociación entre los SNPs ligados a miRNA con ciertos genes candidatos vinculados al proceso de maduración gonadal. 4. Evaluación de la factibilidad del uso de SNPs ligados a miRNA como herramienta en la crianza selectiva de O. mykiss. La caracterización e identificación de miRNAs y sus SNPs será realizada utilizando tecnología de secuenciación masiva por síntesis, análisis bioinformáticos y validación por qPCR y HRMA</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/mapa-2.jpg">
+                            <h4>2012-2014:</h4>
+                            <h5>Proyecto FONDECYT 1120397. “Insights into innate immune response of bivalves challenged to Alexandrum catenella: Comparative transcriptome analysis by 454 pyrosequencing”. Universidad de Concepción. Dr. Cristian Gallardo (PI) (M$148.000 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>The invertebrate immune response is a non-adaptive system, based on both cellular and humoral components. Cellular defense comprises a variety of hemocyte types, carrying out phagocytosis process, and cytotoxic or inflammatory responses, while humoral defense involves a receptor-mediated recognition of molecular patterns associated to microorganisms. Herein, the receptors allow the identification of self and non-self components, being their molecular signaling pathways capable of triggering the transcriptome changes involved in the innate immune responses. Thus, invertebrates have a broad suite of possible innate immune responses against pathogens and marine environmental stressors. Despite our quite extended knowledge about innate immune system in invertebrate species in response to pathogen challenges, only very scarce studies investigate immune responses of bivalves exposed to harmful phytoplankton species (HABs). Herein, there are pivotal questions unresolved regarding the genomic basis involved in immune response to HABs. </p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>For instance, could transcriptome changes in bivalves be triggered by marine toxins such as saxitoxin (SXT)? Is it possible to identify candidate genes involved in innate immune responses to SXT? Are there differences among gene expression from tissues and hemocytes under exposure to SXT? Is there any relationship between physiological responses and immune-related gene expression of bivalves exposed to SXT? Are there variations of immune-related gene expression among populations and species? To answer these questions, our proposal aims to analyze the transcriptomic changes in Mytilus chilensis and Mesodesma donacium challenged by A. catenella, a PSP producer, and get novel insights about immune-related genes in bivalves exposed to saxitoxin. Furthermore, we propose to determine gene expression and cell defense using short-term hemocyte cultures challenged to HAB. Herein, the goals will be to (1) Perform a transcriptome characterization by 454 pyrosequencing, (2) Perform an in silico analysis to discover and identify candidate genes associated to immune response against HAB. (3) Determine the association of immune-related genes expression in several bivalve tissues exposed to A. catenella. </p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>(4) Establish expression patterns of candidate genes and cell responses on short-term hemocyte cultures challenged to both A. catenella and SXT, and (5) Determine the variation of gene expression among individuals from different populations for M. chilensis and M. donacium. To accomplish these goals, the experimental design will be carried out by challenge trials (in vivo and in vitro exposure to analyze hemocytes), followed by High-throughput transcriptome sequencing (RNA-seq) analysis. This proposal will be conducted in collaboration with Dr. Allisson Astuya and Dr. Daniel Varela, who have expertise respectively in hemocyte cell cultures and ecophysiology of phytoplankton. In parallel, this study will have the international cooperation of Dr. Hélène Hégaret (IUEM/UBO, France). Her expertise in bivalve physiology exposed to HABs is recognized worldwide through her publications on this area. The expected outcomes is to establish how bivalve organisms may respond to marine toxins, and thus, develop molecular tools to improve our ability of predict the possible impacts of HAB on native mollusk species, but also on commercial activities such as aquaculture and fisheries.</p>
+                              </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h4>2012-2014:</h4>
+                            <h5>Proyecto FONDECYT 1120896. “Latitudinal shift in the coupling of inner-shelf and mesoscale variability as an explanation for the ecological break observed along central-northern Chile (30-31°S). Universidad de Concepción. (Dr. Fabian Tapia (PI), Dr. Cristian Gallardo (Co-PI). (M$147.000 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>Biogeographic boundaries of marine ecosystems are salient features that result from the interaction of multiple geological, atmospheric and oceanographic processes affecting the population dynamics. The evolving pressure of human activities on coastal systems, as well as future climate scenarios, call for a better understanding of the oceanographic processes that set and maintain these boundaries, in order to improve the management and conservation of coastal ecosystems. Several studies conducted in recent years indicate that there is a latitudinal break in ecological patterns along the coast of central-northern Chile at 30-31°S. Abrupt changes in the abundance and recruitment of intertidal species, as well as in genetic structure of certain macroalgae and benthic invertebrates, have been found despite the absence of a concomitant break in bathymetry or shoreline orientation, whereas other relevant physical factors appear to change gradually along the region. The existence of a sharp ecological boundary in the apparent absence of equally abrupt physical changes provides the motivation for this proposal. Mesoscale patterns of coastal wind stress along central-northern Chile (20-35°S) imply a gradual change in the intensity and persistence of upwelling, being more intermittent but stronger towards the south, and more persistent in the north. It is thought that such latitudinal gradient in upwelling may contribute to the ecological break, by shaping patterns of larval dispersal and through its effects on coastal productivity. However, the abrupt change in community structure at 30-31°S points to a gap in our current understanding of how mesoscale variability in the coastal ocean modulates inner-shelf dynamics and ultimately shapes coastal benthic communities.</p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>In a recent study, we documented a discontinuity in shoreline temperature regimes at 30- 31°S, and showed a south-north drop in the response of local temperatures to meridional wind variability, as well as in the frequency with which cold waters reach the shore. This finding suggests that daily temperature variability at northern sites may not be as strongly coupled with upwelling as in southern sites, and that northern sites are less frequently exposed to cold, nutrient-rich upwelled waters, a potentially strong driver oflocal changes in community structure. This leads to the main hypothesis we put forward in this proposal: that a latitudinal shift in the coupling of inner-shelf variability and mesoscale forcing underlies the ecological break observed at 30-31°S on the Chilean coast. A spatial change in the connection between upwelling and inner-shelf regimes of temperature and nutrient inputs is expected to affect the growth and species composition of macroalgae and benthic invertebrates, and to produce differing levels of physiological stress for some species, thus shaping benthic communities. Beyond a certain temperature threshold, local conditions may be detrimental for growth, reproductive performance, and survival of sessile benthic invertebrates. Available data for mussels show a drop in growth rates and abundance across the 30-31°S break, whereas recent measurements of heat-sock proteins (HSP70) in a species of limpet show a local increase at this same latitude, and marked seasonal differences in the expression of genes associated with thermal stress.</p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>For a different section of the Chilean coast (40-43°S), and for a different mussel, a recently completed study showed that geographic changes in the expression of thermal stressrelated genes (Hsp70, Hsp90) are highly correlated with long-term mean surface temperature at each site. Across 30°S, we expect a discontinuity in physiological stress for intertidal species, which will ultimately produce a latitudinal shift in community structure. We will address the stated hypotheses using an array of inner- and mid-shelf moorings deployed at 6 sites along 32-29°S, to provide a continuous record of hydrographic structure (T/S) in response to coastal winds measured at 4 points along the region of interest. These continuous measurements will be combined with intensive seasonal surveys to characterize the cross-shelf structure of temperature, salinity, dissolved oxygen, and nitrate distributions, concurrent with continuous records of shoreline nitrate concentrations. From these data, we expect to establish a quantitative link between wind-derived upwelling estimates, and the strength of upwelling-driven variability reaching the mid and inner shelf. Finally, we will assess spatial-temporal patterns in the expression of several stress-related genes in benthic invertebrates that span the break, but have been shown to vary either in their population dynamics or genetic structure. By testing these hypotheses we will narrow the gap between understanding the far-field phenomena that drive physical variability in the coastal ocean, and the near-field factors that regulate and shape intertidal benthic communities.</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/mapa-3.jpg">
+                            <h4>2011-2014:</h4>
+                            <h5>FONDEF D09I1065. “Plataforma de referencia para el manejo genómico sustentable de recursos bentónicos de interés comercial y repoblamiento de bancos naturales”. Universidad de Concepción, Universidad Católica del Norte, Universidad Austral de Chile. (M$294.732 CLP)</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>El repoblamiento, es la introducción controlada de individuos a un banco natural con el objeto de aumentar la abundancia local del recurso. En Chile, un reciente interés por el repoblamiento ha surgido a partir de la aprobación de 11 proyectos en el programa HUAM de FONDEF. Sin embargo, ninguno de estos nuevos proyecto evalúa el estatus genético de las poblaciones que serán repobladas ni de aquellas que se usarán para el repoblamiento. De acuerdo a la experiencia internacional, la utilización de unidades poblacionales sin criterios genómicos produce: (i) una reducción de la biomasa en áreas de manejo y bancos naturales producto de la no adaptación de individuos introducidos (aumento de tasas de mortalidad), (ii) bajas tasas de recuperación de la población receptora en áreas de manejo al producirse una mezcla de genotipos entre ejemplares adaptados y no daptados a las condiciones locales, (iii) una reducción de la salud genética de la población, y (iv) efectos sociales en economías asociadas a la pesca artesanal. De aquí que la evaluación genético poblacional resulta fundamental para asegurar el éxito del redoblamiento en Chile. En esta propuesta desarrollaremos una aproximación genómica para estudios genético-poblacionales en poblaciones naturales y de cultivo de especies bentónicas explotadas en las AMERBs. </p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>El objetivo es implementar una plataforma genómica que permita un manejo genético sustentable de especies bentónicas explotadas en las Áreas de Manejo y Explotación de Recursos Bentónicos (AMERBs), y la toma de decisiones en programas de repoblamiento de bancos naturales mediante: i) la generación de herramientas genómicas para caracterizar expresión de productos génicos asociados a la adaptabilidad y estructuración genética de las poblaciones, ii) la creación de un banco genómico con registros históricos de la diversidad genética, iii) el diseño y propuesta de normativas que aseguren la conservación del patrimonio genético de los recursos genómicos bentónicos, explotación sustentable y la Articulación del Convenio de Diversidad Biológica (CDB) con grupos de interés asociados a las áreas de manejo y programas de repoblamiento mediante elaboración de estrategias de difusión y transferencia tecnológica. Por último, mediante la vinculación con proyectos Fondef e Innova-Corfo actualmente en ejecución, los procedimientos genético-poblacionales aquí desarrollados serán aplicados en el erizo (FONDEF AQ08I1024), la chicorea de mar (FONDEF AQ08I1028) el piure (FONDEF AQ08I1030) y el loco (INNOVA-CORFO). Con esto se pretende establecer y fortalecer una red de investigación a nivel nacional que asegure el éxito de las iniciativas de repoblamiento actual y futuras.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/abalon-2.jpg">
+                            <h4>2011-2014:</h4>
+                            <h5>Proyecto FONDEF D09I1067. “Biotecnología aplicada a la producción de un híbrido entre abalón rojo y verde (Fase 2): Optimización del procedimiento de cruza para el desarrollo de una variedad de interés productivo y comercial”. Universidad de Concepción. (M$225.184 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>Los resultados obtenidos durante la ejecución del proyecto FONDEF D06I1027 “Biotecnología aplicada a la producción de un híbrido entre abalón rojo y verde: desarrollo de un nuevo producto y prospección del mercado consumidor”, demostraron la factibilidad de producir semillas híbridas con características de interés productivo y comercial significativamente mejoradas con respecto a las especies parentales, tales como incremento en las tasas de supervivencia, porcentaje de retorno, tasas de crecimiento y manejo productivo. Adicionalmente, fue posible caracterizar genéticamente a las progenies híbridas mediante el desarrollo de un kit de identificación molecular, aporte genético parental y estimación de la expresión génica en híbridos bajo condiciones de estrés, como el aumento de la temperatura del agua en condiciones de cultivo.Con los resultados obtenidos se inició un proceso de protección intelectual y transferencia tecnológica hacia las empresas asociadas. </p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>No obstante, la tecnología de producción de híbridos de abalón requiere optimizarse para lograr el escalamiento productivo-comercial y suplir a la industria del abalón con una nueva variedad híbrida técnicamente factible y comercialmente viable. El presente proyecto de continuidad abordará las siguientes problemáticas identificadas en el proyecto D06I1027: (1) variación en la proporción de fenotipos híbridos de interés comercial (músculo del pie característico del abalón verde y crecimiento característico del abalón rojo), y (2) baja tasa de fecundación y producción de semillas en cruzas híbridas. Las principales causas de ambas problemáticas radican en la existencia de un aporte genético parental en el fenotipo de los híbridos y en la compatibilidad de proteínas implicadas en el proceso de reconocimiento gamético durante la fecundación, respectivamente. Las soluciones propuestas son (1) búsqueda e identificación de marcadores moleculares de ADN (SSR-EST y SNPs) derivados de la expresión génica de los caracteres de interés comercial en híbridos, y (2) producción y utilización de un inductor de fecundación proteico recombinante. </p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>De esta forma, el presente proyecto pretende dirigir y escalar la producción de una variedad híbrida que presente simultáneamente los rasgos fenotípicos de interés tanto del abalón rojo como del verde. Los resultados de producción comprometidos son el desarrollo de un kit de marcadores moleculares para la selección de reproductores y la obtención de un inductor de fecundación espermático. Adicionalmente, el proyecto buscará finalizar el proceso de protección intelectual derivado del procedimiento in vitro para la producción de híbridos comerciales. En materia de transferencia tecnológica, se implementará un plan de negocios y se diseñarán contratos para transferir los principales resultados derivados del proyecto a las empresas locales interesadas. Una vez finalizado el proyecto, las empresas asociadas tendrán acceso a un protocolo optimizado que les permitirá aumentar los niveles de producción de una variedad híbrida con características de interés productivo y comercial.</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h4>2010-2012:</h4>
+                            <h5>Proyecto “Desarrollo y validación de una técnica innovadora de identificación parental genética en loco Concholepas concholepas como herramienta para evaluar la efectividad de las metodología s de repoblamiento, acondicionamiento y manejo en las AMERBs de la IV Región”. GORE- Coquimbo. Chile. (M$67.000 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>Concholepas concholepas es un neogastrópodo marino con un rango de distribución que comprende todo el Pacífico Sur-este, encontrándose desde la Isla Lobos Afuera (6°S) hasta el paralelo 56°S en Cabo de Hornos.  Esta especie posee un alto interés ecológico, ya que además de su amplio rango de distribución posee un ciclo de vida con un estado larval plantónico que se mantiene por al menos 3 meses en la columna de agua generando en las poblaciones una alta capacidad de dispersión. Por otra parte tiene alto interés comercial al ser una de las especies de invertebrados principales de la pesca extractiva de pequeña escala en Chile. A pesar de esto, la explotación pesquera de este recurso ha sido realizada mediante extracción manual de stocks naturales manejada sólo por un plan de manejo implementado hace dos décadas lo que ha llevado a una sobreexplotación del recurso y ha sido necesario implementarse medidas como la veda. </p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>Para aumentar los stocks naturales se han realizado experiencias de repoblamiento del recurso en áreas de manejo, pero actualmente no existe una técnica capaz de evaluar la efectividad de estas actividades, generando la incertidumbre en las organizaciones de pescadores artesanales de la real necesidad de esta práctica. En concreto, actualmente existe la necesidad de determinar si los individuos originados después de un proceso de repoblamiento provienen efectivamente de la población parental o son progenie de individuos preexistentes en las áreas repobladas, además es necesario conocer la proporción de individuos que son progenie de las poblaciones fuente para medir de alguna forma el éxito del repoblamiento.El objetivo principal de este proyecto es evaluar una técnica para evaluar la efectividad de las actividades de repoblamiento realizadas en el recurso loco C. concholepas en distintas caletas de la región de Coquimbo. </p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>Para ello se propone realizar un análisis de asignación parental mediante el uso de marcadores moleculares de alta resolución (SNPs y EST-SSR) en el transcriptoma de C. concholepas mediante pirsosecuenciación 454 y ensamble de novo. Se proponen este tipo de marcadores bajo el supuesto que su resolución y permitirá asignar parentesco de los individuos repoblados a pesar de que el recurso presenta un alto nivel de dispersión en su estado larval y que la escala biogeográfica a utilizar comprende un bajo rango latitudinal. Para ello se hace necesario identificar un gran número de marcadores de ambos tipo, los cuales pueden ser obtenidos mediante técnicas de secuenciación de alto rendimiento de transcriptoma del recurso, por esta razón se propone el uso de la tecnología de pirosecuenciación 454 de ARN del recurso.</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/abalon-3.jpg" style="margin-left:-100px;">
+                            <h4>2008-2011:</h4>
+                            <h5>Proyecto FONDEF D06I1085. “Producción de abalones monosexo  mediante inactivación nuclear gamética y desarrollo de una técnica para la identificación sexual: soluciones biotecnológicas para la industria del abalón”. Universidad de Concepción-Chile. (M$197.000 CLP)</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>La producción de abalón en Chile ha mostrado un crecimiento sostenido desde su introducción en la década de los 80’s, llegando actualmente a producir cerca de 350 toneladas con un ingreso de 7 millones de dólares durante el año 2005. Este incremento productivo ha sido sostenido principalmente por una tecnología basada en sistemas terrestres, lo cual conlleva a importantes limitaciones en la industria como el escalamiento productivo, elevados costos de inversión y falta de diversificación productiva en concesiones marinas. A pesar que la legislación actual autoriza el cultivo de abalón en circuitos abiertos (Decreto supremo Nº231), no existe una alternativa tecnológica en el mercado que permita garantizar el cultivo monosexual o bien certificar el sexos en abalones a nivel industrial. De esta forma, la falta de una tecnología eficiente y económicamente viable se presenta como una amenaza frente al crecimiento productivo de abalón en Chile. El presente proyecto, plantea generar una biotecnología capaz de producir abalones monosexuales mediante procedimientos de inactivación nuclear gamética (bloqueo genético del sexual). </p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Las progenies monosexuales serán evaluadas de acuerdo a variables de cultivo como tasa de fijación larval, tasa crecimiento, supervivencia, eficiencia alimenticia y condición reproductiva. En forma paralela, el proyecto buscará caracterizar e identificar marcadores para la identificación sexual en abalón. Dichos marcadores, tanto bioquímicos como moleculares serán validados a nivel industrial permitiendo a los productores nacionales cumplir con la normativa vigente de cultivar abalones de un solo sexo por bahía autorizada en la zona norte. Los productos derivados del proyecto permitirán generar un plan de negocios basado en la producción de semillas monosexuales o bien el licenciamiento de la tecnología, desarrollo de kits de identificación sexual y venta de servicios de sexaje. Los impactos esperados del proyecto serán verificados mediante la disminución de los costos de cultivo, aumento de la productividad y diversificación de las concesiones marinas existentes.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/cangrejo.jpg">
+                            <h4>2008-2011:</h4>
+                            <h5>Proyecto INNOVA 07CT9 PDT-79. “Trazabilidad genética de productos acuícolas: Desarrollo de un banco de información genética para la industria alimentaria de exportación”. Universidad de Concepción-Chile, Universidad Católica del Norte. (M$300.000 CLP)</h5>
+                          <div class="col-md-3"></div>
+                          </div>
+                            <div class="row three-columns">
+                              <div class="col-md-4">
+                                <p>El mercado de los productos marinos provenientes de cultivo o de un ambiente silvestre, así como de la transformación de ellos, ha experimentado en los últimos años un crecimiento sostenido motivado en gran medida por el aumento del consumo per cápita  y cambios sociales en la mayoría de los países occidentales. Este aumento en la demanda de productos frescos y procesados de peces, moluscos y crustáceos, ha originado la existencia de directrices y regulaciones sanitarias relativas a la seguridad alimentaria. De esta forma, a partir del año 2005 las empresas del sector alimentario, dentro de ellos el sector de pesca y acuicultura, deberán desarrollar e implementar normativas y procedimientos de identificación animal y trazabilidad de acuerdo al Reglamento Europeo 178/2002, la Ley del Bioterrorismo y la COOL (Country-Of-Origin-Labeling). Por otro lado, el desarrollo de herramientas robustas que permitan garantizar su cumplimiento, se deriva en connotaciones económicas como el incremento de la competitividad de mercado al garantizar inocuidad y calidad, diferenciar los productos frente a posibles fraudes o sustitutos y optimizar de la gestión de la oferta en los mercados finales. </p>
+                              </div>
+                              <div class="col-md-4">
+                                <p>El presente proyecto estará orientado a desarrollar procedimientos de trazabilidad genética para la industria acuícola de exportación e implementar un banco de germoplasma de productos acuícolas. De esta forma, mediante marcadores de ADN será posible establecer una huella genética que permita identificar una especie o producto, así como su origen, tan lejos en la cadena de producción como sea necesario, independientemente de su transformación o presentación comercial. Como productos derivados del proyecto, se establecen el desarrollo de un banco genético o germoplasma de especies comerciales, una base de datos sobre parámetros genéticos relevantes y desarrollo de marcadores de ADN especie-específicos. Al finalizar el proyecto se contará con una biotecnología capaz de satisfacer los requerimientos del mercado de productos acuícolas como certificar lugar de origen y calidad (de acuerdo a una base de datos), bioseguridad, identificación de OGMs, diversificación de mercados, protección frente a los sustitutos y competencia desleal.</p> 
+                              </div>
+                              <div class="col-md-4">
+                                <p>De esta forma, a través de la cooperación interdisciplinaria se diseñará y propondrá un mecanismo eficiente de trazabilidad genética que permita dar solución tanto a los productores como a los mercados de destino de productos acuícolas de exportación. Para la ejecución del proyecto, existirá una asociación entre la Universidad de Concepción (Beneficiaria) a través del Centro de Biotecnología, la Universidad Católica del Norte (Co-ejecutor), empresas dedicadas a la producción de productos de exportación e instituciones extranjeras especializadas en el desarrollo de procedimientos biotecnológicos de productos acuícolas. Los mecanismos de transferencia y difusión de los resultados abarcarán desde el empaquetamiento de la tecnología y venta de kits moleculares, seminarios de difusión, talleres técnicos, formación de recursos humanos, un bando de información genética y documentación de germoplasma de productos acuícolas y productividad científica. Adicionalmente, se contempla la protección de los resultados a través de procesos de patentamientos y protección intelectual. </p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <img src="../lbga/img/inv/proyectos-lbga/abalon-4.jpg">
+                            <h4>2007-2010:</h4>
+                            <h5>Proyecto FONDEF D06I1027. “Biotecnología aplicada a la producción de un híbrido entre abalón rojo y verde: desarrollo de un nuevo producto y prospección del mercado consumidor”. Universidad de Concepción-Chile, Universidad Católica del Norte. (M$205.000 CLP)</h5>
+                            <br>
+                            <div class="row two-columns">
+                              <div class="col-md-6">
+                                <p>La introducción de abalón rojo (H. rufescens) y el abalón verde (H. discus hannai) fue realizada en Chile a principios de los años 70s y 80s respectivamente. Desde entonces, la producción de abalón ha mostrado un crecimiento sostenido hasta alcanzar actualmente una producción cercana a las 350 toneladas. Sin embargo, este aumento en los niveles productivos requiere del avance paralelo de otros factores como el mejoramiento de la eficiencia productiva y la diversificación de los mercados consumidores. La biotecnología permite acceder a dichas áreas mediante procedimientos que involucren el desarrollo de nuevos productos. De esta forma, una aplicación biotecnológica es la hibridación entre dos especies relacionadas. La hibridación es beneficiosa en términos productivos debido a que los híbridos presentan características mejoradas con respecto al promedio de las especies parentales. El objetivo de este proyecto es desarrollar una metodología que permita generar un nuevo producto, abalón híbrido entre abalón rojo y verde. </p>
+                              </div>
+                              <div class="col-md-6">
+                                <p>Adicionalmente, el proyecto plantea la certificación genética de las progenies híbridas, así como la prospección y caracterización del mercado consumidor para el ingreso de un nuevo producto de abalón. Los resultados de producción son desarrollar un procedimiento estandarizado para la hibridación entre H. rufescens y H. d. hannai, así como la producción y comercialización de semillas de abalón híbrida con valor agregado. Para los resultados de protección se establecerá una patente para el procedimiento de hibridación, así como una marca comercial para las semillas híbridas de abalón. Para los resultados de transferencia se establecerán contratos tecnológicos y técnicos. Adicionalmente, una vez desarrollados los procedimientos hibridación entre abalón rojo y verde, las empresas participantes contarán con un nuevo producto para poner a prueba ya sea en condiciones de cultivo o de comercialización. Al cabo de dos años de finalizado el proyecto, las empresas podrán adquirir la tecnología o bien participar en el licenciamiento hacia la industria nacional.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-grey">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h4>2010-2014:</h4>
+                            <h5>Proyecto creación Laboratorio Internacional Asociado Chile-Francia: Marine Biogeochemisry and Functional Ecology (MORFUN).</h5>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                        <div class="row proyectos-lbga-row-white">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-proyectos-lbga">
+                            <h3>Proyectos anteriores al año 2009</h3>
+                            <br><br>
+                            <h4>2006-2009:</h4>
+                            <h5>Director Alterno Proyecto FONDEF D05I10246. “Investigación y desarrollo de un banco de germoplasma criobiotecnológico para especies marinas”. Universidad Católica del Norte-Chile, Universidad de Valparaíso.</h5>
+                            <br>
+                            <h4>2006-2009:</h4>
+                            <h5>Proyecto FONDEF D05I10258. “Producción a escala piloto de hembras de choro zapato con color gonadal modificado mediante técnicas biotecnológicas”. Universidad de Concepción, Universidad Católica del Norte-Chile.</h5>
+                            <br>
+                            <h4>2008-2009:</h4>
+                            <h5>Proyecto FIP 2008-39 “Caracterización molecular de los principales recursos bentónicos y estudio de conectividad entre sus poblaciones entre la I y II Regiones. (FaseI).</h5>
+                            <br>
+                            <h4>2002-2005:</h4>
+                            <h5>FONDEF D02I1095. “Optimización de la producción ambientalmente limpia de triploides de ostión del norte Argopecten purpuratus”. Universidad Católica del Norte, Coquimbo - Chile. </h5>
+                            <br>
+                            <h4>2002-2004:</h4>
+                            <h5>Proyecto CONACYT 33018-b. “Marcadores genéticos en el abulón Haliotis spp.”.</h5>
+                            <br>
+                            <h4>2002-2004:</h4>
+                            <h5>Proyecto CONACYT 36075-b. “Procesamiento Automático de Partículas Biogénicas”. Centro de Investigación Científica y de Educación superior de Ensenada, México. </h5>
+                            <br>
+                            <h4>1999-2001:</h4>
+                            <h5>Asistente de investigación FONDEF D98I1044. “Investigación y desarrollo de una tecnología limpia de inducción a triploidía mediante 6-DMAP, en la ostra Crassostrea gigas y el ostión del norte Argopecten purpuratus”. Universidad Católica del Norte, Coquimbo – Chile.</h5>
+                          </div>
+                          <div class="col-md-3"></div>
+                        </div>
+
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade" id="congresos">
+                        <div class="congreso-foto"></div>  
+                          <div class="dna-content"> 
+                            <h3>1999</h3> 
+                                         <p><strong>1.</strong> Gallardo-Escárate, C & K. Lohrmann, 1999. Estudio preliminar de células primordiales y desarrollo gonadal en Semimytilus algosus (Bivalvia: Mytilidae). IV Congreso Latinoamericano de Malacología (IV CLAMA), Coquimbo, Chile, p.92.</p> 
+
+                                        <h3>2000</h3> 
+                                         <p><strong>2.</strong> Gallardo-Escárate, C & K. Lohrmann, 2000. Efecto Histopatológico producido por el tributilestaño (TBT) en el chorito, Mytilus edulis chilensis (Bivalvia: Mytilidae). XX Congreso de Ciencias del Mar, Concepción – Chile.</p> 
+
+                                        <h3>2002</h3> 
+                                         <p><strong>3.</strong> Lohrmann, K., von Brand, E & C. Gallardo-Escárate. 2002.  Gonadal Maturation of triploid scallops Argopecten purpuratus Lamarck, 1819. 94 Annual Meeting of the National Shellfisheries Association, Mystic Ct., USA, p. 75.</p>
+
+                                        <h3>2003</h3> 
+                                         <p><strong>4.</strong> Gallardo-Escárate, C., Álvarez-Borrego J., V. Kober & M. A. del Río-Portilla. 2003. Análisis cariológico en abulón rojo del Pacífico, Haliotis rufescens mediante procesamiento digital de imágenes.  XXIII Congreso de Ciencias del Mar, Punta Arenas – Chile.</p>
+
+                                         <p><strong>5.</strong> Castro, E., Álvarez-Borrego, J., Kober, V., Rodríguez, A & C.Gallardo-Escárate. 2003. Identification of species of copepods using a correlation method invariant to position and rotation. XXIII Congreso de Ciencias del Mar, Punta Arenas – Chile.</p>
+
+                                         <p><strong>6.</strong> Gallardo-Escárate, C., J. Álvarez-Borrego & V. Kober. 2003. Identificación de cromosomas homólogos mediante correlación digital de patrones de difracción. XLVI Congreso Nacional de la SMF y XVI Congreso de la AMO. Mérida - México.</p>
+
+                                         <h3>2004</h3> 
+                                         <p><strong>7.</strong> Álvarez-Borrego, J., Gallardo-Escárate, C., del Río-Portilla, M. Á., Kober, V., Rodríguez-Santiago, M. A., Mouriño-Pérez, R. R., Castro-Longoria, E., Bueno-Ibarra, M., Chávez-Sánchez & Fájer-Ávila. E. J. Septiembre 12-13, 2004. Procesado de Imágenes de Microorganismos. IV Simposio Óptica en la Industria. Ensenada, Baja California, México.</p>
+
+                                         <p><strong>8.</strong> Gallardo-Escárate, C., J. Álvarez Borrego & M. Á. del Río Portilla. Junio 24-28, 2004. A new method for genome size estimation in Haliotis rufescens (Archaeogastropoda: Haliotidae) using DAPI-fluorescence fading. 37th annual meeting of the Western Society of Malacologists, Ensenada, Baja California, México.</p>
+
+                                        <p><strong>9.</strong> M. Á. del Río Portilla, M. Aguilar Juárez, Gallardo-Escárate, C., M. Vivanco Aranda & A. Licona Chávez. Junio 24-28, 2004. Genetic advancements on cultured abalone in Baja California. 37th annual meeting of the Western Society of Malacologists, Ensenada, Baja California, México.</p>
+
+                                        <p><strong>10.</strong> von Brand, E., Palma-Rojas, C., C. Gallardo-Escárate & G. Amar. Mayo 17-20, 2004. El uso de análisis de imágenes para determinar los niveles de ploidía en el ostión del Norte, Argopecten purpuratus. XXIV Congreso de Ciencias del Mar, Coquimbo – Chile.</p>
+
+                                        <p><strong>11.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., M. Á. del Río Portilla & V. Kober. Mayo 1-5,  2004. Quantitative Karyotype in Pacific Red Abalone Haliotis rufescens, Using Image Analysis. The Annual International Meeting of the World Aquaculture Society 2004. Honolulu, Hawaii, USA.</p>
+
+                                        <p><strong>12.</strong> von Brand, E., Palma-Rojas, C., C. Gallardo-Escárate & G. Amar. 17-20, 2004. “Use of image analysis to determine ploidy levels in Chilean scallop Argopecten purpuratus”. Aquaculture 2004. Honolulu, Hawaii, USA.</p>
+
+                                        <h3>2005</h3> 
+                                         <p><strong>13.</strong> Gallardo-Escárate, C., von Brand, E. C. Palma-Rojas & G. Amar. Análisis de contenido de ADN cromosómico en el abalón rojo Haliotis rufescens mediante análisis de imágenes fluorescentes. Noviembre 23-25, 2005. XXXVIII Reunión Anual de la Sociedad de Genética de Chile. Puerto Varas, Chile.</p>
+
+                                        <p><strong>14.</strong> Gallardo-Escárate, C. Variación de la composición cariotípica y tamaño genómico en tres especies de abalón de la costa de California. Noviembre 23-25, 2005. XXXVIII Reunión Anual de la Sociedad de Genética de Chile. Puerto Varas, Chile.</p> 
+
+                                        <p><strong>15.</strong> Palma-rojas, C., Araya, J. M., Gallardo-Escárate, C., Tarifeño, E., Lépez, I., E. von Brand & G. Amar. Citogenética comparativa de Mytilus sp, M. chilensis, M. galloproviancialis, M. edulis y Choromytilus chorus. Noviembre 23-25, 2005. XXXVIII Reunión Anual de la Sociedad de Genética de Chile. Puerto Varas, Chile.</p> 
+
+                                        <p><strong>16.</strong> Gallardo-Escárate, C., J. Álvarez-Borrego & M. Á. del Río-Portilla. DAPI-fluorescent fading: a problem in microscopy or a way to measure nuclear DNA content? Agosto 21-26, 2005. ICO2005. Changchun, China.</p>
+
+                                        <p><strong>17.</strong> Álvarez-Borrego, J., Kober, V., Gallardo-Escárate, C., Chávez-Sánchez, M. C., E. Fájer-Ávila & M. A. Bueno. “Fusion Algorithm For Color Microbiological Organisms Images In Automatized Microscopes”. Agosto 21-26, 2005. ICO2005. Changchun, China.</p>  
+
+                                        <p><strong>18.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., E. von Brand-Skopnik & M.  Á. del Río Portilla. Genome size estimation in two populations of the northern Chilean scallop Argopecten purpuratus, using fluoresce image analysis. Mayo 9-13, 2005. The Annual International Meeting of the World Aquaculture Society. Bali International Convention Center, Nusa Dua, Bali Indonesia.</p>  
+
+                                        <p><strong>19.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., Bueno-Ibarra, M. A. M. Á. del Río Portilla & E. von Brand-Skopnik. Analysis of chromosomal DNA content in Pacific red abalone Haliotis rufescens by fluorescence image analysis. Mayo 9-13, 2005. The Annual International Meeting of the World Aquaculture Society. Bali International Convention Center, Nusa Dua, Bali Indonesia.</p> 
+
+                                        <p><strong>20.</strong> Gallardo-Escárate, C., Álvarez-Borrego, J., del Río Portilla, M. Á., Cross, I., A. Merlo & L. Rebordinos. Karyotype analysis and chromosomal localization by FISH rDNA, telomeric (TTAGGG)n and (GATA)n repeats in Haliotis fulgens (Archaeogastropoda: Haliotidae). Mayo 9-13, 2005. The Annual International Meeting of the World Aquaculture Society. Bali International Convention Center, Nusa Dua, Bali Indonesia.</p> 
+
+                                       <h3>2006</h3> 
+                                         <p><strong>21.</strong> Gallardo, J., Gallardo-Escárate, C., C. Palma-Rojas y E. von Brand. Inducción a triploidía de meiosis I en el ostión del norte Argopecten purpuratus mediante 6-DMAP. Noviembre 1-3, 2006. XXXIX Reunión Anual de la Sociedad de Genética de Chile. Viña del Mar, Chile.</p> 
+
+                                        <p><strong>22.</strong> Goldstein, J., Gallardo-Escárate, C., C. Palma-Rojas y E. von Brand. Cariotipo cuantitativo y determinación de tamaño genómico en el chorito Semimytilus algosus Gould (1850).  Noviembre 1-3, 2006. XXXIX Reunión Anual de la Sociedad de Genética de Chile. Viña del Mar, Chile.</p> 
+
+                                        <p><strong>23.</strong> von Brand, E., Lohrmann, K., C. Gallardo-Escárate & C. Palma – Rojas. Effect of chromosome manipulation on reproduction in scallops. Noviembre 6-9, 2006. Physiological aspects of reproduction and nutrition in molluscs. La Paz, México.</p>    
+
+                                        <p><strong>24.</strong> Goldstein-Vásquez, J., C. Gallardo-Escárate & M. Thiel. Identificación de crustáceos decápodo mediante correlación digital de patrones de difracción. Mayo 22-26, 2006. XXVI Congreso de Ciencias del Mar. Iquique, Chile.</p>
+
+                                        <p><strong>25.</strong> Araya, C., C. Palma-Rojas, C. Gallardo-Escárate, E. von Brand & G. Amar. El Cariotipo de Ensis macha (Heterodonta: Veneroidae: Pharidae). Mayo 22-26, 2006. XXVI Congreso de Ciencias del Mar. Iquique, Chile.</p> 
+
+                                       <p><strong>26.</strong> Ávalos, L., Merino, G., C. Gallardo-Escárate & Elisabeth von Brand. Análisis de crecimiento y mortalidad de ostión del norte Argopecten purpuratus inducidos a triploidía en dos sistemas de recirculación. Mayo 22-26, 2006. XXVI Congreso de Ciencias del Mar. Iquique, Chile.</p>  
+
+                                       <p><strong>27.</strong> Gallardo-Escárate, C., E. von Brand Skopnik and M. Á. del Río-Portilla. Karyotype composition in three California abalones and their relationship with genome size: an image analysis approach. Febrero 19-24, 2006. VI International Abalone Symposium. Puerto Varas, Chile.</p> 
+
+                                    <h3>2007</h3> 
+                                      <p><strong>28.</strong> Gallardo-Escárate, C., C. D’Ottone, Felipe Aguilera & M. Á. del Río Portilla. Jurel tipo salmón v/s loco tipo abalón: marcadores de ADN como una herramienta para la identificación de Haliotis. Noviembre 07-09, 2007. XL Reunión Anual de la Sociedad de Genética de Chile. Balneario Tomé - Concepción, Chile.</p> 
+
+                                      <p><strong>29.</strong> LaFarga, F., Gallardo-Escárate, C., A. Santelices, Y. Defranchi, L. Ávalos, C. Alvarez & E. Dupré. Evaluación de integridad genómica en espermatozoides de moluscos expuestos a H2O2 mediante ensayo cometa. Noviembre 07-09, 2007. XL Reunión Anual de la Sociedad de Genética de Chile. Balneario Tomé - Concepción, Chile.</p>  
+
+                                      <p><strong>30.</strong> Aguilera, F., V. Faúndez & C. Gallardo-Escárate.. Identificación especie-específica en moluscos gastrópodos de importancia comercial mediante PCR-RFLP de citocromo oxidasa I. Noviembre 07-09, 2007. XL Reunión Anual de la Sociedad de Genética de Chile. Balneario Tomé - Concepción, Chile.</p>  
+
+                                      <p><strong>31.</strong> D’Ottone, C., Gallardo-Escárate, C., V. Faúndez & M. Á. del Río Portilla.  Utilización de FINS (forensically informative nucleotide sequencing) para trazabilidad genética molecular: Haliotis como un caso de estudio. Noviembre 07-09, 2007. XL Reunión Anual de la Sociedad de Genética de Chile. Balneario Tomé - Concepción, Chile.</p>  
+
+                                     <p><strong>32.</strong> Gallardo-Escárate, C., C. D’Ottone, Felipe Aguilera, Alberto Miranda & M. Á. del Río Portilla. Jurel tipo salmón v/s loco tipo abalón: marcadores de ADN como una herramienta para la identificación de Haliotis. Noviembre 07-09, 2007. XL Reunión Anual de la Sociedad de Genética de Chile. Balneario Tomé - Concepción, Chile.</p>  
+
+                                    <p><strong>33.</strong> LaFarga, F., Gallardo-Escárate, C., A. Santelices, Y. Defranchi, L. Ávalos, C. Alvarez & E. Dupré.  Evaluación de integridad genómica en espermatozoides de moluscos expuestos a H2O2 mediante ensayo cometa. Septiembre 12-14, 2007. 1er Congreso Nacional de Acuicultura, Coquimbo, Chile.</p>  
+
+                                    <p><strong>34.</strong> Aguilera, F., V. Faúndez & C. Gallardo-Escárate. Identificación especie-específica en moluscos gastrópodos de importancia comercial mediante PCR-RFLP de citocromo oxidasa I. Septiembre 12-14, 2007. 1er Congreso Nacional de Acuicultura, Coquimbo, Chile.</p>  
+
+                                    <p><strong>35.</strong> D’Ottone, C., Gallardo-Escárate, C., V. Faúndez & M. Á. del Río Portilla. Utilización de FINS (forensically informative nucleotide sequencing) para trazabilidad genética molecular: Haliotis como un caso de estudio. Septiembre 12-14, 2007. 1er Congreso Nacional de Acuicultura, Coquimbo, Chile.</p>  
+
+                                    <p><strong>36.</strong> Miranda, A., C. Gallardo-Escárate and M. A. del Río-Portilla. Julio 25-28, 2007. Species identification of canned “abalone” using FINS (Forensically Informative Nucleotide Sequencing). 40th annual meeting of the Western Society of Malacologists, La Paz, Baja California Sur, México.</p> 
+
+                                   <h3>2008</h3> 
+                                      <p><strong>37.</strong> Aguilera-Muñoz, F., Lafarga-De la Cruz, F. & Gallardo-Escarate, C. Filogenia molecular de la Familia Mytilidae en Chile basada en secuencias de ADNmt (16s, COI) y espaciadores internos transcritos. Biotecnología Habana 2008, AgroBiotecnología: Nuevos enfoques ante grandes retos. 30 de Noviembre al 05 Diciembre 2008, Habana, Cuba.</p> 
+
+                                     <p><strong>38.</strong> Lafarga-De la Cruz, F., Agujera-Muñoz, F., Perone-Millar, C. & Gallardo-Escarate, C. Amplificación cruzada de loci microsatélite en abalón rojo (Haliotis rufescens) obtenidos mediante partidores heterologos. Biotecnología Habana 2008, AgroBiotecnología: Nuevos enfoques ante grandes retos. 30 de Noviembre al 05 Diciembre 2008, Habana, Cuba.</p> 
+
+                                     <p><strong>39.</strong> Valenzuela-Muñoz, V., Uribe, A., Astuya, A., Gallardo-Escárate, C. Utilización de proteína espermática Lisina como herramienta biotecnológica en la fecundación in vitro de abalón rojo (Haliotis rufescens). Biotecnología Habana 2008, AgroBiotecnología: Nuevos enfoques ante grandes retos. 30 de Noviembre al 05 Diciembre 2008, Habana, Cuba.</p>  
+
+                                     <p><strong>40.</strong> Aguilera-Muñoz, F., Lafarga-De la Cruz, F. & Gallardo-Escárate, C. Filogenia molecular de la Familia Mytilidae en Chile basada en secuencias de ADNmt (16s, COI) y espaciadores internos transcritos. XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>  
+
+                                     <p><strong>41.</strong> Prieto-Araya, P., Aguilera-Muñoz, F. & Gallardo-Escárate, C. Relación filogenética del género Fissurella (Mollusca: Vestigastropoda) en las costas de Chile, mediante análisis de ADNr 16s, COI y Región ITS. XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>  
+
+                                    <p><strong>42.</strong> Lafarga-De la Cruz, F., Agujera-Muñoz, F., Perone-Millar, C. & Gallardo-Escárate, C. Amplificación cruzada de loci microsatélite en abalón rojo (Haliotis rufescens) obtenidos mediante partidores heterologos. XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>  
+
+                                    <p><strong>43.</strong> Valenzuela-Bustamante, M., Gallardo-Escárate, C. & Dupré, E. Integridad genómica y motilidad espermática en abalón rojo (Haliotis rufescens) expuestos a diferentes crioprotectantes. XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>  
+
+                                    <p><strong>44.</strong> Valenzuela-Muñoz, V., Uribe, A., Astuya, A., Gallardo-Escárate, C. Utilización de proteína espermática Lisina como herramienta biotecnológica en la fecundación in vitro de abalón rojo (Haliotis rufescens). XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>  
+                                     
+                                   <p><strong>45.</strong> Costa-Venegas, C., Aguilera-Muñoz, F. & Gallardo-Escárate, C. Análisis de variabilidad genética en poblaciones de cultivo de abalón rojo Haliotis rufescens, mediante marcadores PCR-ISSR. XLI Reunión Anual de la Sociedad de Genética de Chile, 26-29 Noviembre 2008, Pucón - Chile.</p>
+
+                                   <p><strong>46.</strong> Aguilera-Muñoz, F. & Gallardo-Escárate, C. Diseño de partidores específicos para la amplificación de los intrones ITS1 e ITS2 en especies de gastrópodos de importancia comercial en Chile. Mayo 26-30, 2008. XXVIII Congreso de Ciencias del Mar. Hotel Sheraton – Viña del Mar, Chile.</p> 
+
+                                  <p><strong>47.</strong> Agujera-Muñoz, F. & Gallardo-Escárate, C. Utilización de secuencias parciales de genes ADN COI, 16s y región ribosomal ITS - 5.8s - ITS2 para trazabilidad genética de gastrópodos de importancia comercial en Chile. Mayo 26-30, 2008. XXVIII Congreso de Ciencias del Mar. Hotel Sheraton - Viña del Mar, Chile.</p> 
+                                  
+                                  <p><strong>48.</strong> Perone-Millar,C., Aguilera-Muñoz,F., LaFarga,F. & Gallardo-Escárate, C. Caracterización de loci microsatélites con amplificación cruzada en Haliotis rufescens y Haliotis discus hannai  Mayo 26-30, 2008. XXVIII Congreso de Ciencias del Mar. Hotel Sheraton - Viña del Mar, Chile.</p> 
+
+                                  <p><strong>49.</strong> Gallardo-Escárate, C. Haliotis rufescens x H. discus hannai: Biotecnología aplicada al desarrollo de un nuevo híbrido de abalón. Mayo 26-30, 2008. XXVIII Congreso de Ciencias del Mar. Hotel Sheraton - Viña del Mar, Chile.</p> 
+
+                                <h3>2009</h3> 
+                                  <p><strong>50.</strong> Gallardo-Escárate, C. “Aproximaciones genéticas en híbridos interespecíficos de abalón, Haliotis rufescens x H.discus hannai. Congreso COLACMAR, 26-30 Octubre 2009, Habana- Cuba.</p>  
+
+                                  <p><strong>51.</strong> Amar, G., Lafarga, F., Iturra, P & C. Gallardo-Escárate. “Análisis Citogenético-Molecular del Híbrido interespecífico entre Haliotis rufescens y H. discus hannai”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba. </p> 
+
+                                 <p><strong>52.</strong> Valenzuela-Bustamante, M., Ferrada, S., R. Galleguillos & C. Gallardo-Escárate. “Caracterización de loci microsatélite en locate, Thais chocolata (gastropoda: Muricidae)”. Congreso COLACMAR, 26-30 Octubre 2009, Habana- Cuba. </p>
+
+                                 <p><strong>53.</strong>Valenzuela-Bustamante, M., G. Amar-Basulto & C. Gallardo-Escárate. “Caracterización molecular y ocalización de cluster ribosomal 5s en Choromytilus choros”. Congreso COLACMAR, 26-30 Octubre 2009, Habana- Cuba. </p>
+
+                                 <p><strong>54.</strong>Amar-Basulto, G. M. Valenzuela-Bustamante, P. Prieto-Araya & C. Gallardo-Escárate. “Hibridación In Situ fluorescente (FISH) sobre genes ribosomales 18s y 5s en Choromytilus Chorus (Bivalvia: Mytilidae)”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>  
+
+                                 <p><strong>55.</strong>Nuñez-Acuña, G., Castillo-Lara, A. & C. Gallardo-Escárate. “Análisis de expresión del gen HSP70 en híbrido entre Haliotis rufescens y Haliotis discus hannai expuestos a estrés térmico”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>
+
+                                 <p><strong>56.</strong>Lafarga de la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escárate, C. “Análisis genético de híbridos entre abalón rojo (Haliotis rufescens) y Japonés (Haliotis discus hannai) producidos artificialmente en Chile”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p> 
+
+                                 <p><strong>57.</strong>Lafarga de la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escárate, C. “Análisis parental en híbridos inter-específicos entre Haliotis rufescens y H. discus hannai, mediante marcadores microsatélites”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>    
+
+                                 <p><strong>58.</strong>Lafarga de la Cruz, F., Agulera-Muñoz, F. & Gallardo-Escárate, C. “Variabilidad genética en poblaciones de cultivo de Haliotis rufescens en Chile: una aproximación basada en microsatélites heterólogos”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>     
+
+                                 <p><strong>59.</strong>Aguilera-Muñoz F., Prieto-Araya P., Haye P. & Gallardo-Escárate C. “Aislación y Caracterización de loci microsatélites en el ostión del norte Argopecten Purpuratus (Bivalvia: Pectinidae)”. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>
+
+                                 <p><strong>60.</strong>Prieto-Araya P, Aguilera-Muñoz F, Valenzuela-Bustamante M, Haye P.& Gallardo-Escárate C. “DNA Barcoding: ¿Una herramienta potencial para trazabilidad en acuicultura?. Congreso COLACMAR, 26-30 Octubre 2009, Habana-Cuba.</p>
+
+                                 <p><strong>61.</strong>Castillo-Lara, A., Valenzuela-Muñoz, V., Nuñez-Acuña, G. & Gallardo-Escárate, C. “Análisis de expresión de catalasa y superoxido dismutasa en Haliotis rufescens expuestos a estrés oxidativo térmico. Congreso COLACMAR, 26-30  Octubre 2009. Habana-Cuba.</p> 
+
+                                 <p><strong>62.</strong>Salinas-Clarot, K., Gutiérrez, A., Forttes-Gomez, D. & Gallardo-Escárate, C. “Patrones de expresión de miostatina en abalón rojo (Haliotis rufescens). Congreso COLACMAR, 26-30 Octubre 2009. Habana-Cuba.</p>  
+
+                                 <p><strong>63.</strong>Gutiérrez, A., Forttes-Gomez, D., Salinas-Clarot, K. & Gallardo-Escárate, C. “Análisis de patrones de expresión de genes relacionados con la maduración sexual en abalón rojo (Haliotis rufescens). Congreso COLACMAR, 26-30 Octubre 2009. Habana-Cuba.</p> 
+
+                                 <p><strong>64.</strong>Castillo-Sepulveda, E. & Gallado-Escárate, C. “Desarrollo de micro  aspersión de alimento formulado para el asentamiento larval de abalón rojo (Haliotis rufescens). Congreso COLACMAR, 26-30 Octubre 2009. Habana-Cuba.</p>
+
+                                 <p><strong>65.</strong>Forttes, D., Gutierrez, A., Salinas-Clarot, K., Uribe, E. A., Gallardo-Escárate, C. “Clonación de promotor de actina y construcción de un nuevo vector de expresión en abalón rojo, Haliotis rufescens”. XLII Reunión Anual de la Sociedad de Genética de Chile. 21-23 Octubre 2009, Hotel El Dorado, Concepción-Chile.</p>
+
+                                 <p><strong>66.</strong>Gutierrez, A., Forttes,D., Salinas-Clarot, K., Gallardo-Escárate, C., “Análisis de patrones de expresión de genes relacionados con la maduración sexual en abalón rojo Haliotis rufescens”. XLII Reunión Anual de la Sociedad de Genética de Chile. 21-23 Octubre 2009, Hotel El Dorado, Concepción-Chile.</p>  
+
+                                <p><strong>67.</strong>Castillo-Lara, A., Valenzuela-Muñoz,V., Núñez-Acuña, G., Gallardo-Escárate, C. “Análisis de expresión de catalasa y superoxido dismutasa en Haliotis rufescens expuestos a estrés oxidativo y térmico”. XLII Reunión Anual de la Sociedad de Genética de Chile. 21-23 Octubre 2009, Hotel El Dorado, Concepción-Chile.</p>  
+                                
+                                <p><strong>68.</strong>Núñez-Acuña, G., Castillo-Lara, A., Gallardo-Escárate, C. “Análisis de expresión del gen HSP70 en híbrido entre Haliotis rufescens y Haliotis discus hannai, expuestos a estrés térmico”. XLII Reunión Anual de la Sociedad de Genética de Chile. 21-23 Octubre 2009, Hotel El Dorado, Concepción-Chile.</p>  
+
+                                <p><strong>69.</strong>Amar, G., Lafarga, F., Iturra, P., Gallardo-Escárate, C. “Análisis citogenético molecular del híbrido interespecífico entre Haliotis rufescens y Haliotis discus hannai”. XLII Reunión Anual de la Sociedad de Genética de Chile. 21-23 Octubre 2009, Hotel El Dorado, Concepción-Chile.</p>    
+
+                                <p><strong>70.</strong>Valenzuela-Muñoz, V., Gallardo-Escárate, C., A. Astuya & A. Uribe. “Clonamiento, expresión y purificación de la proteína espermática lisina de abalón rojo (H. rufescens) y sus potenciales usos en acuicultura. Congreso  XXXII Reunión Anual de la Sociedad Bioquímica y Biología Molecular de Chile. 22 -25 Septiembre 2009. Termas de Chillan-Chile.</p> 
+
+                                <p><strong>71.</strong>Gutierrez, A., Uribe, E. & Gallardo-Escárate, C. “Análisis de patrones de expresión de genes relacionados con la maduración sexual en Haliotis rufescens. XXXII Reunión Anual de la Sociedad Bioquímica y Biología Molecular de Chile. 22 -25 Septiembre 2009. Termas de Chillan-Chile.</p>   
+
+                                <p><strong>72.</strong>Lafarga-De la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escarate, C. “Genetic análisis of an artificially produced hibrid abalone (Haliotis rufescens x H. discus hannai) in Chile”. 7th International Abalone Symposium, 19-24 Julio 2009. Pattaya – Tailandia.</p>       
+
+                                <p><strong>73.</strong>Lafarga-De la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escarate, C. “Genetic variability in cultured populations of red abalone (Haliotis rufescens) in Chile: An approach base don heterologous microsatellites. 7th International Abalone Symposium, 19-24 Julio 2009. Pattaya – Tailandia.</p>   
+
+                                <p><strong>74.</strong>Aguilera-Muñoz, F., Mendoza-Porras, O., Prieto-Araya, P., Gallardo-Escárate, C. & Del Rio-Portilla, MA. “Molecular tools for genetic traceability in abalone species”. 42 Annual Meeting of the Western Socity of Malacologists, 23-27 Junio 2009. Fullerton California-Estados Unidos.</p>   
+
+                                <p><strong>75.</strong>Mendoza-Porras, O., Aguilera-Muñoz, F., Prieto-Araya, P., Gallardo-Escárate, C. & Del Río-Portilla, MA. Genetic polymorphism in Mexican Haliotidae using inter simple sequence repeat (ISSR) as a tool in treceability assays”. 7th International Abalone Symposium, 19-24 Julio 2009. Pattaya – Tailandia.</p>   
+
+                                <p><strong>76.</strong>Mendoza-Porras, O., Aguilera-Muñoz, F., Prieto-Araya, P., Gallardo-Escárate, C. & Del Río-Portilla, MA. “Genetic trazability: a feasible tool for Mexican abalone”. 42 Annual Meeting of the Western Socity of Malacologists, 23-27 Junio 2009. Fullerton California-Estados Unidos.</p> 
+
+                                <p><strong>77.</strong>Amar-Basulto, G., Valenzuela-Bustamante, M., Prieto-Araya, P. & Gallardo-Escárate, C. “Hibridación in situ fluorescente (FISH) sobre genes ribosomales 18s y 5s en Choromytilus choros (Bivalvia: Mytilidae). XXIX Congreso Ciencias del Mar, 25-28 Mayo 2009. Concepción-Chile.</p> 
+
+                                <p><strong>78.</strong>Valenzuela-Muñoz, V., Uribe, E., Astuya, A. & Gallardo-Escarate, C. “Clonamiento de la proteína espermática Lisina de abalon rojo (H. rufescens). XXIX Congreso Ciencias del Mar, 25-28 Mayo 2009. Concepción-Chile.</p> 
+
+                                <p><strong>79.</strong>Lafarga-De la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escárate, C. “Análisis genético de abalones híbridos entre abalón rojo (H.rufescens) y japones (H.discua hannai) producidos artificialmente en Chile. XXIX Congreso Ciencias del Mar, 25-28 Mayo 2009.Concepción-Chile.</p>    
+
+                                <p><strong>80.</strong>Lafarga-De la Cruz, F., Aguilera-Muñoz, F. & Gallardo-Escarate, C. “Variabilidad genética en poblaciones de cultivo de abalón rojo (Haliotis rufescens) en Chile”. XXIX Congreso Ciencias del Mar, 25-28 Mayo 2009. Concepción-Chile.</p>
+
+                                <p><strong>81.</strong>Prieto-Araya, P., Aguilera-Muñoz, F. & Gallardo-Escárate, C. “Relaciones filogenéticas del género  Fissurella (Mollusca: Vestigastropoda) en las costas de Chile mediante análisis de ADNmt 16s, COI y región ITS.  II Congreso Nacional de Acuicultura. 7-9 de Enero 2009. Temuco-Chile.</p>    
+
+                               <p><strong>82.</strong>P.Costa-Venegas, C., Aguilera-Muñoz, F. & Gallardo-Escárate, C. “Análisis de variabilidad genética en poblaciones de cultivo de abalón rojo (Haliotis rufescens), mediante marcadores PCR-ISSR. II Congreso Nacional de Acuicultura. 7-9 de Enero 2009. Temuco-Chile.</p>     
+
+                               <p><strong>83.</strong>Aguilera-Muñoz, F., Lafarga-De la Cruz, F. & Gallardo-Escárate, C. Filogenia molecular de la Familia Mytilidae en Chile basada en secuencias de ADNmt (16s, COI) y espaciadores internos transcritos. II Congreso Nacional de Acuicultura, 7 al 9 de Enero 2009, Temuco, Chile.</p>  
+
+                               <p><strong>84.</strong>Lafarga-De la Cruz, F., Agujera-Muñoz, F., Perone-Millar, C. & Gallardo-Escárate, C. Amplificación cruzada de loci microsatélite en abalón rojo (Haliotis rufescens) obtenidos mediante partidores heterologos. II Congreso Nacional de Acuicultura, 7 al 9 de Enero 2009, Temuco, Chile.</p>   
+
+                               <p><strong>85.</strong>Gallardo-Escárate, C., Lafarga-De la Cruz, F., Amar, G., Aguilera-Muñoz, F., Valenzuela, V. & Astuya, A. “Biotecnología aplicada al desarrollo de un nuevo híbrido de abalón: Haliotis rufescens x H: discus hannai. II Congreso Nacional de Acuicultura.7-9 de Enero 2009. Temuco-Chile.</p>   
+
+                               <p><strong>86.</strong>Valenzuela-Muñoz, V., Uribe, A., Astuya, A., Gallardo-Escárate, C. Utilización de proteína espermática Lisina como herramienta biotecnológica en la fecundación in vitro de abalón rojo (Haliotis rufescens). II Congreso Nacional de Acuicultura, 7 al 9 de Enero 2009, Temuco, Chile.</p> 
+
+                               <p><strong>87.</strong>Gallardo-Escárate, C. Haliotis rufescens x H. discus hannai: Biotecnología aplicada al desarrollo de un nuevo híbrido de abalón. C. II Congreso Nacional de Acuicultura, 7 al 9 de Enero 2009, Temuco, Chile.</p>   
+
+                            <h3>2010</h3> 
+                                <p><strong>88.</strong> Sánchez, R., González, V., Gómez, D., C. Gallardo-Escárate & L. Cárdenas. (2010). Generación de marcadores moleculares para caracterizar diversidad genética funcional en el loco. IV reunión Binacional de Ecología, 8 al 13 de agosto 2010. UBA, Buenos Aires, Argentina.</p> 
+
+                                <p><strong>89.</strong> Muñoz, N. Pilar Haye & C. Gallardo-Escárate. Filogeografía comparada de las jaibas explotadas Cancer edwardsii y Homalaspis plana en la costa de Chile. IV reunión Binacional de Ecología, 8 al 13 de agosto 2010. UBA, Buenos Aires, Argentina.</p> 
+
+                                <p><strong>90.</strong> Fuentealba, G., L. Cárdenas & C. Gallardo-Escárate. Dispersión larval vs. flujo genético en gastrópodos murícidos de la Costa Sureste del Pacífico. IV reunión Binacional de Ecología, 8 al 13 de agosto 2010. UBA, Buenos Aires, Argentina.</p> 
+
+                                <p><strong>91.</strong> Segovia, N., P. Haye & C. Gallardo-Escárate. Barcoding de crustáceos comerciales de Chile y trazabilidad de productos comerciales: potencial herramienta de manejo y conservación. IV reunión Binacional de Ecología, 8 al 13 de agosto 2010. UBA, Buenos Aires, Argentina.</p>   
+
+                                <p><strong>92.</strong> Lafarga-De la Cruz, F., G. Amar-Basulto & C. Gallardo-Escárate. Hybridization between Haliotis rufescens and H. discus hannai: a new abalone hybrid for the Chilean aquaculture? III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile.</p>  
+
+                                <p><strong>93.</strong> Aguilar-Espinoza, A & C. Gallardo-Escárate. Characterization of EST-SSR markers in Haliotis rufescens from heterologous sequences. III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile.</p> 
+
+                                <p><strong>94.</strong> Núñez-Acuña, G., Valenzuela-Muñoz, V., P. Haye-Molina & Gallardo-Escárate, C. Analysis of gene expression patterns in Mytilus chilensis in aquaculture zones from Southern Chile. III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile.</p> 
+
+                                <p><strong>95.</strong> Prieto-Araya, P, P. Haye & C. Gallardo-Escárate. Development of DNA mini-barcode for traceability of commercial bivalves. III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile.</p>
+
+                                <p><strong>96.</strong> Rivas, P & C. Gallardo-Escárate. Characterization of myostatin gene in the Northern scallop Argopecten purpuratus (Lamarck, 1819). III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile.</p> 
+
+                                <p><strong>97.</strong> Valenzuela-Muñoz, V & C. Gallardo-Escárate. In silico transcriptome analysis in reproductive tissue of red abalone (H. rufescens) by high throughput sequencing. III International Aquaculture Congress, 22-26 november 2010, Viña del Mar, Chile. </p>  
+
+                            <h3>2011</h3> 
+                                <p><strong>98.</strong> Valentina Valenzuela-Muñoz & C. Gallardo-Escárate. Pyrosequencing in reproductive tissue of red abalone (H. rufescens) and SNP mining from sex-specific genes. World Aquaculture 2011, 07-10 june, Natal, Brazil.</p>
+
+                                <p><strong>99.</strong> Aguilar-Espinoza, A., Valenzuela-Muñoz, V., Gallardo-Escárate, C. Genetic evaluation of abalones (Haliotis rufescens) with differences in growth rate by means EST-SSR heterologous markers. World Aquaculture 2011, 07-10 june, Natal, Brazil.</p> 
+
+                                <p><strong>100.</strong> Núñez-Acuña, G., Aguilar-Espinoza, A., Haye, P. A., Cárdenas, L., Gallardo-Escárate, C. High-throughput transcriptome sequencing from concholepas concholepas: genomic resources for restocking and aquaculture. World Aquaculture 2011, 07-10 june, Natal, Brazil.</p> 
+
+                                <p><strong>101.</strong> Aguilar-Espinoza, A., Núñez-Acuña, G., Valenzuela-Muñoz, V., Gallardo-Escárate, C. Transcriptome characterization in mesodesma donacium (Bivalvia) and discovery of new molecular markers. Genomics in Aquaculture International Symposium (GIA2011). 14-17 September 2011, Heraklion, Crete, Greece.</p> 
+
+                                <p><strong>102.</strong> Valenzuela-Muñoz, V., Bueno-Ibarra, M. A., Gallardo-Escárate, C. Pyrosequencing in reproductive tissue of Haliotis rufescens and validation of novel sex-specific molercular markers. Genomics in Aquaculture International Symposium (GIA2011). 14-17 September 2011, Heraklion, Crete, Greece.</p> 
+
+                                <p><strong>103.</strong> Núñez-Acuña, G., Aguilar-Espinoza, A., Haye, P. A., Cárdenas, L., Gallardo-Escárate, C. Novel genomic resources for aquaculture and restocking of Concholepas concholepas (neogastropoda: muricidae). Genomics in Aquaculture International Symposium (GIA2011). 14-17 September 2011, Heraklion, Crete, Greece.</p>
+
+                                <p><strong>104.</strong> Chávez, J., Astuya, A., Gallardo-Escárate, C. Caracterización molecular de Ferritina e identificación de SNPs en Concholepas concholepas. XLIV Reunión anual Sociedad de Genética de Chile. 6-9 de noviembre 2011, Puerto Varas, Chile.</p>
+
+                                <p><strong>105.</strong> Muñoz, N. C., Segovia, N., Gallardo-Escárate, C., Haye, P.A. Estructura genética de Homalaspis plana (Brachyura) en la costa de Chile con ADN mitocondrial y microsatélites. XIV COLACMAR, 30 de Octubre y 04 de Noviembre de 2011. Camboriú, Estado de Santa Catarina, Brasil.</p>   
+
+                                <p><strong>106.</strong>Haye, P. A., Gallardo, M. A., Segovia, N. I., Vera, R., Gallardo-Escárate, C. Autenticación de carne de braquiuros comercializados en Chile usando ADN Barcoding. XIV COLACMAR, 30 de Octubre y 04 de Noviembre de 2011. Camboriú, Estado de Santa Catarina, Brasil.</p> 
+
+                                <p><strong>107.</strong>Aguilar-Espinoza, A., Valenzuela-Muñoz, V., Haye, P., Gallardo-Escárate, C. Caracterización de marcadores EST-SSR y genes candidatos en Mesodesma donacium a partir de pirosecuenciación 454. XLIV Reunión anual Sociedad de Genética de Chile. 6-9 de noviembre 2011, Puerto Varas, Chile.</p>    
+
+                                <p><strong>108.</strong>Valenzuela-Muñoz, V., Alonso-Chivite, A., Gallardo-Escárate, C. Validación de marcadores moleculares asociados a sexo en Haliotis rufescens obtenidos por pirosecuenciación 454. XLIV Reunión anual Sociedad de Genética de Chile. 6-9 de noviembre 2011, Puerto Varas, Chile.</p> 
+
+                                <p><strong>109.</strong>Alonso-Chivite, A., Amar-Basulto, G., Valenzuela-Muñoz, V., Núñez-Acuña, G., Aguilar-Espinoza, A., Gallardo-Escárate, C. Identificación molecular de híbridos de abalón utilizando el gen VERL: Análisis de RFLP y FISH. XLIV Reunión anual Sociedad de Genética de Chile. 6-9 de noviembre 2011, Puerto Varas, Chile.</p>
+
+                                <p><strong>110.</strong>Núñez-Acuña, G., Aguilar-Espinoza, A., Haye, P. A., Cárdenas, L., Gallardo-Escárate, C. Identificación y validación de marcadores SNPs en Concholepas concholepas. XLIV Reunión anual Sociedad de Genética de Chile. 6-9 de noviembre 2011, Puerto Varas, Chile.</p> 
+
+                            <h3>2012</h3>  
+                              <p><strong>111.</strong>Lafarga-De la Cruz, F., Aguilar-Espinoza, A., Del Rio-Portilla, M & Gallardo-Escarate, C. Development of EST-SSR molecular markers for red abalone Haliotis rufescens. 8th International Abalone Symposium, 06th May-11th May 2012. Hobart, Tasmania, Australia.</p> 
+
+                              <p><strong>112.</strong>Del Rio-Portilla, M., Lafarga-De la Cruz, F & Gallardo-Escarate, C. Morphometric analysis and condition index for breeding programs of the red abalone Haliotis rufescens. 8th International Abalone Symposium, 06th May-11th May 2012. Hobart, Tasmania, Australia.</p>
+
+                              <p><strong>113.</strong>Trujillo-Valle, M. L. Vargas-Peralta, C., Delgado-Vega, R., Gallardo-Escárate, C. & Del Rio-Portilla, M. Colour chart for the estimation of microalgal concentration: a practical appoach. 8th International Abalone Symposium, 06th May-11th May 2012. Hobart, Tasmania, Australia.</p>     
+
+                              <p><strong>114.</strong>Lafarga-De la Cruz F., Amar-Basulto, G., Nuñez-Acuña, V. Valenzuela, G., Gallardo-Escárate C., “Haliotis rufescens x H. discus hannai: a new hybrid to improve the Chilean abalone aquaculture?, 104th National Shellfish Association (NSA) Annual Meeting, del 25-29 de Marzo de 2012, Seattle, USA.</p> 
+
+                              <p><strong>115.</strong>Lafarga-De la Cruz F., Amar-Basulto, G., Nuñez-Acuña, V. Valenzuela, G., Gallardo-Escárate C., “Haliotis rufescens x H. discus hannai: a new hybrid to improve the Chilean abalone aquaculture?, 104th National Shellfish Association (NSA) Annual Meeting, del 25-29 de Marzo de 2012, Seattle, USA.</p>
+
+                              <p><strong>116.</strong>Lafarga-De la Cruz F., Aguilar-Espinoza, A., Del Río-Portilla, M.A. Gallardo-Escárate C., “Development of EST-SSR molecular markers for red abalone Haliotis rufescens”. International Abalone Symposium (IAS), del 6-11 de Mayo de 2012, Hobart, Tasmania.</p>
+
+                              <p><strong>117.</strong>Del Río-Portilla, M.A., Lafarga-De la Cruz F., Gallardo-Escárate C. Morphometric analysis and condition index for breeding programs of the red abalone Haliotis rufescens. International Abalone Symposium (IAS), del 6-11 de Mayo de 2012, Hobart, Tasmania.</p>
+
+                              <p><strong>118.</strong>Andrea Aguilar-Espinoza, Gustavo Núñez-Acuña, Jacqueline Chávez-Mardones, Cristian Gallardo-Escárate. Ubiquitin-conjugating enzyme E2-like gene associated to pathogen response in Concholepas concholepas: SNP identification and transcription expression. XXXV Reunión Annual de la Sociedad Bioquímica y Biología Molecular de Chile. 01-05 de Octubre de 2012. Puerto Varas –Chile.</p>
+
+                              <p><strong>119.</strong>Gustavo Nuñez-Acuña, Ambbar Aballay, Allisson Astuya, Cristian Gallardo-Escárate. Transcriptome response of Mytilus galloprovincialis exposed in vivo to Saxitoxin (STX). XXXV Reunión Annual de la Sociedad Bioquímica y Biología Molecular de Chile. 01-05 de Octubre de 2012. Puerto Varas –Chile.</p> 
+
+                              <p><strong>120.</strong>Valentina Valenzuela-Muñoz, Daniel Uribe, Cristian Gallardo-Escárate. SNP mining in haliotis rufescens from transcriptome pyrosequencing. XXXV Reunión Annual de la Sociedad Bioquímica y Biología Molecular de Chile. 01-05 de Octubre de 2012. Puerto Varas –Chile.</p> 
+
+                              <p><strong>121.</strong>Waleska Maldonado-Aguayo, Valentina Valenzuela-Muñoz, Gustavo Nuñez-Acuña, Jacqueline Chávez-Mardones, Cristian Gallardo-Escárate. Molecular characterization of two serine proteinase inhibitor genes in the surf clam Mesodesma donacium exposed to Vibrio anguillarum. XXXV Reunión Annual de la Sociedad Bioquímica y Biología Molecular de Chile. 01-05 de Octubre de 2012. Puerto Varas –Chile.</p> 
+
+                              <p><strong>122.</strong>Jacqueline Chávez-Mardones, Valentina Valenzuela-Muñoz, Gustavo Nuñez-Acuña, Waleska Maldonado-Aguayo, Cristian Gallardo-Escárate. Characterization of ferritin and identification of single nucleotide polymorphism (SNP) associated with innate immune response in Concholepas concholepas. XXXV Reunión Annual de la Sociedad Bioquímica y Biología Molecular de Chile. 01-05 de Octubre de 2012. Puerto Varas –Chile.</p> 
+
+                           <h3>2013</h3>  
+                              <p><strong>123.</strong>Gallardo-Escárate, C., G. Núñez-Acuña. RNA-seq analysis reveals a complex immune response against saxitoxin in the mussel Mytilus chilensis. The First Conference of the International Society of Fish and Shellfish Immunology, Volume 34, Issue 6, June 2013, Page 1707. Vigo – España.</p> 
+
+                              <p><strong>124.</strong>Valenzuela-Muñoz, V., C. Gallardo-Escárate. Molecular characterization of IRAK-4 and Interleukin-17 genes in the California red abalone (Haliotis rufescens) exposed to Vibrio anguillarum. The First Conference of the International Society of Fish and Shellfish Immunology, Volume 34, Issue 6, June 2013, Page 1743. Vigo – España.</p> 
+
+                              <p><strong>125.</strong>Nuñez-Acuña, G., V. Valenzuela-Muñoz, C. Gallardo-Escárate. High-throughput transcriptome sequencing for SNPs discovery associated to immune-relevant genes in the mussel Mytilus chilensis. The First Conference of the International Society of Fish and Shellfish Immunology, Volume 34, Issue 6, June 2013, Page 1707. Vigo – España.</p>
+
+                              <p><strong>126.</strong>López, E., Portillo-López, A., Gallardo-Escárate, C,. del Rio-Portilla, M. Validation of housekeeping genes as internal control for expression of expression of sex-specific genes in the red abalone Haliotis rufescens. 46th Meeting Western Society of Malacologists. June 23-26, 2013. San Diego, USA.</p>
+
+                              <p><strong>127.</strong>Del Rio-Portilla, M., Lafarga-De la Cruz, F., Gallardo-Escárate, C., Aguilar-Espinoza, A., Vargas, C., Paniagua, C. Population genetic of the red abalone cultured in Baja California using microsatellites derived from next generation sequencing. 46th Meeting Western Society of Malacologists. June 23-26, 2013. San Diego, USA.</p><p><strong>127.</strong>Del Rio-Portilla, M., Lafarga-De la Cruz, F., Gallardo-Escárate, C., Aguilar-Espinoza, A., Vargas, C., Paniagua, C. Population genetic of the red abalone cultured in Baja California using microsatellites derived from next generation sequencing. 46th Meeting Western Society of Malacologists. June 23-26, 2013. San Diego, USA.</p>
+
+                              <p><strong>128.</strong>Gallardo-Escárate, C. 2013. Secuenciación masiva de transcriptomas en especies no modelos: una mirada en invertebrados acuáticos. Simposio de Genómica evolutiva y ecológica: estudios de especies no modelo. V Reunión Binacional de Ecología. Puerto Varas 3 y 6 de Noviembre, Chile.</p>
+
+                              <p><strong>129.</strong>Gallardo-Escárate, C. 2013. CALIGUS-SEQ: Avances, desafíos y perspectivas sobre proyecto de secuenciación masiva de última generación en Caligus rogercresseyi. VI Foro Internacional de Recursos Marinos y Acuicultura. 25 - 28 de noviembre de 2013. Valparaíso, Chile.</p>
+
+                              <p><strong>130.</strong>Goncalvez, AT. & Gallardo-Escárate, C. 2013. Dietas funcionales para el mejoramiento de la sanidad y la sustentabilidad de la acuicultura. VI Foro Internacional de Recursos Marinos y Acuicultura. 25 – 28 de noviembre de 2013. Valparaíso, Chile.</p>
+                            </div>
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade" id="proyectos-transcriptomicos">
+                        <div class="proyectos-transcriptomicos-foto"></div> 
+                        <div class="row intro-row">
+                          <div class="col-md-3"></div>
+                          <div class="col-md-6 text-intro">
+                            <p>RNA-Seq es un método recientemente desarrollado para obtener perfiles transcriptómicos a partir de librerías de cDNA. Dicha aproximación utiliza tecnologías de secuenciación masiva o High throughput sequencing a partir de distintas plataformas NGS como pirosecuenciación 454, Illumina y PGM. Los estudios que utilizan este método ya han alterado nuestro punto de vista de la magnitud y complejidad de los procesos biológicos en eucariontes y especialmente en los organismos marinos. RNA-Seq también proporciona una medición mucho más precisa de los niveles de transcritos y sus variantes que otros métodos como microarreglos. El LBGA desarrolla actualmente proyectos transcriptómicos de especies relevantes para la acuicultura en Chile.</p>
+                          </div>
+                          <div class="col-md-3 "></div>
+                        </div>
+                        <div class="row circles">
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-1.jpg" alt="..." class="img-circle"></center>
+                              <p>Caligus rogercresseyi, es una especie ectoparásita de piojo de mar que afecta a un 99% de los centros de cultivos de salmónidos en Chile. Unas de las principales problemáticas para el control integrado de piojos de mar es el escaso conocimiento a nivel genómico y específicamente durante los estados larvales y adultos de esta especie de copépodo. Nuestro grupo de investigación ha iniciado un proyecto de secuenciación genómica de C. rogercresseyi a partir de los estados larvales de nauplio, copepodito, chalimus, así como adultos hembras y machos. Hasta la fecha se han generado más de 400 millones de lecturas desde 8 estados de desarrollo. Dicha información ha permitido la identificación de genes candidatos y marcadores moleculares de alta resolución.</p>  
+                            </div> 
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-2.jpg" alt="..." class="img-circle"></center>
+                              <p>El salmón del Atlántico o Salmo Salar, es una de las especies de salmones más conocida a nivel mundial y actualmente representa una de las mayores producciones de la industria salmonera en Chile. Una de las  mayores problemáticas en la acuicultura de salmones son las enfermedades generadas por los distintos patógenos tanto de origen viral como bacteriano. De esta forma, la comprensión de la respuesta inmune innata y adaptativa de peces en cultivo desde una perspectiva genómica representa una prioridad para el desarrollo de una acuicultura sustentable. Nuestro laboratorio actualmente se encuentra en la generación de información transcriptómica desde experimentos de desafío frente a P. salmonis e ISAV.</p> 
+                            </div> 
+                          </div>
+                          <div class="row circles">
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-3.jpg" alt="..." class="img-circle"></center>
+                              <p>Mytilus chilensis, es una especie muy importante en Chile a nivel ecológico y comercial. En este último ámbito, existen diversas brechas para la acuicultura nacional entorno a este recurso endémico. Entre ellas, hay falta información sobre las dinámicas fuente-sumidero entre poblaciones y patrones de conectividad genética. Adicionalmente, existe escaso conocimiento molecular sobre procesos biológicos relacionados a respuesta inmune, crecimiento y reproducción. En este contexto, nuestro grupo de investigación ha generado recientemente una librería de cDNA utilizando una plataforma Hiseq 2000 de illumina. La base de datos EST generada alcanza los 800 millones de reads, equivalentes a 80 Gbases de información genética.</p>  
+                            </div> 
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-4.jpg" alt="..." class="img-circle"></center>
+                              <p>Haliotis rufescens, abalón rojo. Esta especies de molusco vestigastrópodo ha sido uno de los principales modelos de estudios para el LBGA. Sin embargo, el conocimiento genómico de la especies es escaso. En este contexto, nuestro grupo ha desarrollado la primera pirosecuenciación 454 de transcriptoma a partir de tejido reproductivo.  De este estudio se han identificado y caracterizado numerosos genes implicados en procesos biológicos como crecimiento, reproducción e inmunidad. Actualmente, el LBGA se encuentra en desarrollo de una nueva librería de cDNA para crecimiento y color de músculo (pie). </p> 
+                            </div> 
+                          </div>
+                          <div class="row circles">
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-5.jpg" alt="..." class="img-circle"></center>
+                              <p>Concholepas concholepas, esta especie endémica de las costas de Chile y Perú conocido como “loco” es uno de los recursos bentónicos de mayor importancia socio-económica. Eventos climáticos como el NIÑO y la sobreexplotación del recurso han generado drásticas disminuciones de los tamaños poblacionales. Nuestro laboratorio se encuentra actualmente desarrollando marcadores tipo SNP a partir de pirosecuenciación 454 y genes candidatos. Esta información nos permitirá realizar estudios de conectividad poblacional (flujo genético) y estructuración genética. Adicionalmente, la información transcriptomica ha sido utilizada para caracterizar a nivel molecular genes candidatos implicados en inmunidad innata, crecimiento y regeneración de tejidos. </p>  
+                            </div> 
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-6.jpg" alt="..." class="img-circle"></center>
+                              <p>Tegula atra se encuentra en ambientes intermareales asociada a macroalgas como Lessonia nigrescens sp y ha sido descrita como uno de los herbívoros bentónicos más abundantes y frecuentes de ambientes rocosos (inter y submareales) expuestos del norte de Chile. Nuestro laboratorio se encuentra en la caracterización transcriptómica de 5 poblaciones localizadas en el Norte de Chile y su evaluación temporal durante el verano e invierno, respectivamente. Este esfuerzo de secuenciación se enmarca en el proyecto FONDECYT 1120896.</p> 
+                            </div> 
+                          </div>
+                          <div class="row circles">
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-7.jpg" alt="..." class="img-circle"></center>
+                              <p>Pyura chilensis, esta especie de urocordado de la clase Ascidiacea, se ha considerado una especie de importancia ecológica, por concentrar una gran diversidad biológica en sus agregaciones y de importancia económica por ser un recurso de extracción por pescadores artesanales. Actualmente, nuestro grupo participa en el desarrollo de un proyecto de RNA-seq para P. chilensis en distintas poblaciones a lo largo de la costa de Chile. El trabajo de investigación es liderado por la Dra. Pilar Haye del Laboratorio de Diversidad Molecular (Ladimo) (https://sites.google.com/a/ucn.cl/phaye/laboratorio-de-diversidad-molecular) de la Universidad Católica del Norte.</p>  
+                            </div> 
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-8.jpg" alt="..." class="img-circle"></center>
+                              <p>Loxechinus albus, es una especie de erizo altamente valorada en los mercados internacionales. Actualmente nuestro laboratorio en colaboración con la Dra. Leyla Cárdenas del Instituto de Ciencias Ambientales y Evolutivas (Universidad Austral de Chile), ha desarrollado un pirosecuenciación 454 para esta especie. La Dr. Cárdenas a cargo de la investigación se encuentra desarrollando marcadores de DNA a fin de caracterizar a nivel genético distintas poblaciones naturales de erizo a fin de evaluar los efectos de repoblamiento en áreas de manejo.</p> 
+                            </div> 
+                          </div>
+                          <div class="row circles">
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-9.jpg" alt="..." class="img-circle"></center>
+                              <p>Mesodesma donacium, este molusco bivalvo conocido como “macha” posee una gran importancia socio-económica y de exportación como producto gourmet. Su alto valor ha llevado al recurso a la sobreexplotación. El LBGA ha desarrolla una corrida de pirosecuenciación 454, obteniendo más de 190.000 ESTs. De los cuales ha sido posible identificar numerosos genes candidatos y marcadores de DNA. En este punto, nuestro grupo ha descrito los primeros microsátelites y SNPs para esta especie. </p>  
+                            </div> 
+                            <div class="col-md-6">
+                              <center><img src="../lbga/img/inv/proyectos-transcriptomicos/img-10.jpg" alt="..." class="img-circle"></center>
+                              <p>Artemia salina es una especie de crustáceo branquiópodo del orden Anostraca propia de aguas salobres continentales y de distribución cosmopolita. Nuestro laboratorio en colaboración con el Dr. Gonzalo Gajardo de la Universidad de los Lagos se encuentra en la preparación de una librería de cDNA para su posterior secuenciación masiva. Esperamos en los próximos meses tener los datos genómicos a esta interesante especie extremófila.</p> 
+                            </div> 
+                          </div>
+                      </div>
+
+                      <div role="tabpanel" class="tab-pane fade" id="cursos">
+                        sadsadsa
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div></center>
+
+
+
+
+
+
+  <footer>
+    <div class="row">
+      <h2>Contáctanos</h2>
+      <h3>Laboratorio de Biotecnología y Genómica Acuícola</h3>
+      <div class="col-md-3">
+        <span class="glyphicon glyphicon-map-marker"></span><h4>Dirección</h4>
+        <p>Universidad de Concepción</p>
+        <p>Centro de Biotecnología</p>
+        <p>Barrio Universitario s/n</p>
+        <p>Casilla 160-C</p>
+        <p>Concepción</p>
+      </div>
+      <div class="col-md-2">
+        <span class="glyphicon glyphicon-earphone"></span><h4>Teléfonos</h4>
+        <p>(56)(41) 220 342</p>
+        <p>(56)(41) 220 3996</p>
+        <h5>Laboratorio</h5>
+        <p>(56)(41) 220 4402</p>
+      </div>
+      <div class="col-md-3">
+        <span class="glyphicon glyphicon-envelope"></span><h4>E-mail</h4>
+        <p>claufuentealba@udec.cl</p>
+      </div>
+      <div class="col-md-4 logos-footer">
+        <img src="../lbga/img/incar-logo.png" style="margin-right:50px"/>
+        <img src="../lbga/img/udec-logo.png" style="margin-right:30px"/>
+        <img src="../lbga/img/cbt-logo.png" style="margin:30px 30px"/>
+      </div>
+    </div>
+  </footer>
+  <div class="row" id="copyright">
+    <p>2015 © Todos los Derechos Reservados</p>
+  </div>
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+          <script src="js/vendor/bootstrap.min.js"></script>
+
+          <script src="js/main.js"></script>
+
+          <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+          <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+          </script>
+        </body>
+        </html>
